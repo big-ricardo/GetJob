@@ -1,0 +1,112 @@
+.expla {
+    opacity: 0.8;
+    height: 100%;
+    width: 50%;
+}
+
+
+.collum{
+    display: flex;
+    width: 100%;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: row;
+}
+
+.titulo {
+    height: 100%;
+    width: 100%;
+    font-size: 3.0rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.texto {
+    width: 70%;
+    height: auto;
+    color: black;
+    text-align: center;
+}
+
+p{
+    font-family: inherit;
+    color: inherit;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    color: inherit;
+  }
+
+  
+h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+.efeito :hover{
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    
+}
+.rodape{
+    background-position-y: 0%;
+    width: 100%;
+    height: 15px;
+    font-size: 100%;
+    color: rgb(26, 19, 19);
+}
+nav{
+   width: 80%; 
+   box-shadow: 0px 0px 10px 10px white;
+}
+.container{
+    display: flex;
+    width: 100%;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.logo{
+    width: 200px;
+}
+
+.logoo{
+    width: 50px;
+}
+
+.inicio{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.Bpessoal{
+    margin-right: 100px;
+}

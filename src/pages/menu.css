@@ -1,0 +1,222 @@
+.ativo {
+    color: black;
+}
+
+
+/* corpo do menu */
+
+header {
+    top: 0;
+    left: 0;
+    box-shadow: 0 30px 30px rgba(87, 85, 85, 0.05);
+    padding: 0 0;
+    background: #800000;
+    border-bottom: 3px solid black;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: bold;
+    z-index: 9;
+}
+
+header a:link {
+    text-decoration: none;
+}
+
+header .logo {
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 100px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav {
+    float: right;
+    box-shadow: 0 30px 30px rgba(87, 85, 85, 0);
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    float: right;
+}
+
+header nav ul div.logi {
+    list-style: none;
+    margin-right: 100px;
+    position: relative;
+}
+
+header nav ul li {
+    list-style: none;
+    color: white;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    position: relative;
+}
+
+header nav ul li a img{
+    width: 45px;
+    margin-left: 5px;
+    border: 2px solid #fff;
+    border-radius: 360px;
+}
+
+header nav ul li .perf h3{
+    font-size: 18px;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 5px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li .perf {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+header nav ul li .perf:hover{
+    border-radius: 20px;
+    background-color: #910808;
+    border: 2px solid black;
+    transition: 0.5s;
+}
+
+header nav ul li ul {
+    position: absolute;
+    left: 0;
+    background: #d12d13;
+    display: none;
+}
+
+header nav ul li.active ul {
+    display: block;
+}
+
+header nav ul li.sub-menu:before {
+    content: '\f0d7';
+    font-family: fontAwesome;
+    position: absolute;
+    line-height: 50px;
+    float: right;
+    color: #fff;
+    right: 5px;
+    cursor: pointer;
+}
+
+header nav ul li.active.sub-menu:before {
+    content: '\f0d8';
+}
+
+header nav ul li ul li {
+    display: block;
+    width: 150px;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+header nav ul li a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    border: 2px solid #800000;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #fff;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    border-radius: 20px;
+    background-color: #910808;
+    border: 2px solid black;
+    transition: 0.5s;
+}
+
+
+/* Icone do menu */
+
+.menu-toggle {
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Responsividade do menu */
+
+@media(max-width: 1235px) {
+    header {
+        padding: 0px 15px;
+        background: #800000;
+    }
+    .menu-toggle {
+        display: block;
+        transition: all 1s;
+    }
+
+    .menu-toggle:hover img{
+        transform: rotate(90deg);
+      transition: all .3s;
+    }
+    /* Novo posicionamento do header */
+    header nav {
+        position: absolute;
+        width: 70%;
+        height: calc(100vh - 45px);
+        border: 2px 2px 2px 2px solid black;
+        background: #970000;
+        top: 50px;
+        left: -100%;
+        margin-top: 6px;
+        transition: 0.5s;
+    }
+    header .logo {
+        padding-top: 1px;
+    }
+    header nav ul {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    /* Borda de separação dos itens */
+    header nav ul li a {
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
+    }
+    /* Posicionamento do header quando ativo */
+    header nav.active {
+        left: 0;
+    }
+    header nav ul li.active ul {
+        position: relative;
+        background: #d12d13;
+    }
+    header nav ul li ul li {
+        width: 100%;
+    }
+}
+ .logoo{
+     width: 50px;
+     margin-top: 5px;
+ }
+
+ .fixar{
+     position: fixed;
+ }

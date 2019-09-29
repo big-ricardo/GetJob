@@ -1,0 +1,33 @@
+.vagas-container button{
+    margin-top: 10px;
+    border: 0px;
+    border-radius: 4px;
+    height: 48px;
+    font-size: 16px;
+    background-color: #df4723;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.vagas-container footer{
+    color: white;
+}
+.vagas-container link{
+    color: black;
+}
+.vagas-container{
+    width: 100%;
+    text-align: center; 
+    
+}
+.box-c{
+    width: 300px;
+    height: 400px;
+    margin-top: 10px;
+    box-shadow: 0 30px 30px rgba(87, 85, 85, 0.5);
+    margin-bottom: 5%; 
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 5%;
+    border-color: rgb(78, 74, 74);
+}

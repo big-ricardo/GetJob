@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c9354736.chunk.css",
+    "main.js": "/static/js/main.d6cf86cb.chunk.js",
+    "main.js.map": "/static/js/main.d6cf86cb.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.788d7dfc.js",
+    "runtime~main.js.map": "/static/js/runtime~main.788d7dfc.js.map",
+    "static/css/2.266e55a5.chunk.css": "/static/css/2.266e55a5.chunk.css",
+    "static/js/2.d75f2c35.chunk.js": "/static/js/2.d75f2c35.chunk.js",
+    "static/js/2.d75f2c35.chunk.js.map": "/static/js/2.d75f2c35.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.44503d975de918b7092e06b5f363b76c.js": "/precache-manifest.44503d975de918b7092e06b5f363b76c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.266e55a5.chunk.css.map": "/static/css/2.266e55a5.chunk.css.map",
+    "static/css/main.c9354736.chunk.css.map": "/static/css/main.c9354736.chunk.css.map",
+    "static/media/comercial.png": "/static/media/comercial.fb58e217.png",
+    "static/media/dislike.svg": "/static/media/dislike.d4ec34e8.svg",
+    "static/media/favicon (1).ico": "/static/media/favicon (1).3b78e3d7.ico",
+    "static/media/itsamatch.png": "/static/media/itsamatch.21c10b26.png",
+    "static/media/like.svg": "/static/media/like.542059a4.svg",
+    "static/media/logoGet.svg": "/static/media/logoGet.9e3d5c78.svg",
+    "static/media/pesoal.png": "/static/media/pesoal.1ee0d578.png"
+  }
+}
