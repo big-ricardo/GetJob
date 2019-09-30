@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import logo from '../assets/logoGet.svg'
+import {Alert} from 'reactstrap'
 import './Login.css'
 import { Link } from 'react-router-dom'
 import api from '../services/apis'
@@ -7,6 +8,7 @@ import api from '../services/apis'
 export default function Login({ history }) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [error, setError] = useState('')
 
     async function handleSubmit(e) {
         e.preventDefault()
@@ -23,7 +25,7 @@ export default function Login({ history }) {
         if (_id) {
             history.push(`/emp/${_id}`)
         } else {
-            history.push('/')
+            setError(true)
         }
     }
 
@@ -34,6 +36,11 @@ export default function Login({ history }) {
                 <Link to="/">
                     <img src={logo} className="logo" alt="Tindev" />
                 </Link>
+                {error && (
+                    <Alert color="danger">
+                        <strong>Algo deu Errado!</strong>Revise seu e Email e Senha
+              </Alert>
+                )}
                 <input
                     type="text"
                     placeholder="Nome da Empresa"

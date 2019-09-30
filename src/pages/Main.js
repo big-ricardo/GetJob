@@ -34,11 +34,11 @@ export default function Main({ match }) {
             })
             setUsers(response.data)
         }
-        loadUsers();
+        loadUsers();// eslint-disable-next-line 
     }, [match.params.id])
 
     async function testUsers() {
-        if (users.length <= 6) {
+        if (users.length <= 1) {
             setPg(pagina + 1)
             const response = await api.get(`/devs?pg=${pagina}&vs=6`, {
                 headers: { user: match.params.id }

@@ -1,22 +1,10 @@
 import React from 'react'
-import { UncontrolledCarousel } from 'reactstrap'
 import logo from '../assets/logoGet.svg'
 import comerci from '../assets/comercial.png'
 import pesso from '../assets/pesoal.png'
 import log from '../assets/Icone/favicon (1).ico'
 import './Escolhe.css'
 
-const items = [
-        {
-          src: 'data:https://cdn.pixabay.com/photo/2015/06/24/15/45/ipad-820272_960_720.jpg',
-        },
-        {
-          src: 'data:../assets/slide2.jpg',
-        },
-        {
-          src: 'data:../assets/slide3.jpg',
-        }
-      ]; 
 
 export default function Login({ history }) {
     return (
@@ -24,7 +12,6 @@ export default function Login({ history }) {
 
         <center><nav> <div className="inicio"><img src={log} alt="tindev" className="logoo" /><img src={logo} alt="tindev" className="logo" /></div></nav></center>
         <div className="container">
-        <UncontrolledCarousel items={items} />
             <div className="expla texto ">
                 <div>
                     <h1>Quem somos?</h1>

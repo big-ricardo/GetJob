@@ -59,7 +59,7 @@ export default function Main({ match }) {
 
 
     async function testUsers() {
-        if (users.length  <= 6) {
+        if (users.length  <= 1) {
             setPg(pagina + 1)
             console.log(pagina)
             const respons = await api.get(`/vags?pg=${pagina}&vs=6`, {
