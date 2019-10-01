@@ -44,7 +44,7 @@ export default function Login({ history, match }) {
     }
 
     useEffect(() => {
-        const socket = io('http://localhost:3333', {
+        const socket = io('https://getjobserver.herokuapp.com', {
             query: { user: match.params.id }
         })
         socket.on('message', messageRecebida => {

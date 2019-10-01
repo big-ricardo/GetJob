@@ -110,3 +110,24 @@ nav{
 .Bpessoal{
     margin-right: 100px;
 }
+
+#carousel{
+    width:90%;
+    height: 500px;
+    margin: auto;
+    
+}
+#itens{
+    overflow: auto;
+    width: 100%;
+    height: 500px;
+    display: inline-block;
+    align-items: center;
+}
+#itens ul{
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}

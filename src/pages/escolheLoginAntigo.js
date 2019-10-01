@@ -1,44 +1,17 @@
-import React, { useEffect} from 'react'
+import React from 'react'
 import logo from '../assets/logoGet.svg'
 import comerci from '../assets/comercial.png'
 import pesso from '../assets/pesoal.png'
 import log from '../assets/Icone/favicon (1).ico'
 import './Escolhe.css'
-import slide1 from '../assets/slide1.jpg'
-import slide2 from '../assets/slide2.jpg'
-import slide3 from '../assets/slide3.jpg'
+
 
 export default function Login({ history }) {
-
-
-     function componentDidMount() {
-        window.onscroll = () => handleScroll()
-      }   
-  
-      function handleScroll(){
-        if (document.documentElement.scrollTop  + document.querySelector('#root') >= document.documentElement.scrollHeight) {
-            console.log('final')
-          } 
-      }
-
     return (
-    <body>
+        <body>
+
         <center><nav> <div className="inicio"><img src={log} alt="tindev" className="logoo" /><img src={logo} alt="tindev" className="logo" /></div></nav></center>
-            <center>
-                <div id="carousel">
-                    <div id="itens">
-                        <img scr={pesso} id="left" alt=""/>
-                        <ul>
-                            <li><div class="item"><img src={slide1} alt="slide1"/></div></li>
-                            <li><div class="item"><img src={slide2} alt="slide2"/></div></li>
-                            <li><div class="item"><img src={slide3} alt="slide3"/></div></li>
-                        </ul>
-                        <img scr={pesso} id="next" alt=""/>
-                    </div>
-                </div>
-            </center>
         <div className="container">
-           
             <div className="expla texto ">
                 <div>
                     <h1>Quem somos?</h1>
@@ -74,7 +47,7 @@ export default function Login({ history }) {
             <script src='./acoes.js' />
             <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
         </div>
-    </body>
+        </body>
     );
 }
 
