@@ -169,6 +169,9 @@ export default function Main({ match }) {
                                                     <p><strong>Localidade:</strong>  {user.cidade}</p>
                                                     <p><strong>Bio:</strong>  {user.bio}</p>
                                                     <p><strong>Email:</strong>  {user.email}</p>
+                                                    <div className="buttonss">
+                                                        <a href={`/mensagensE/${match.params.id}/${user._id}`}>Ver vaga</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div></div>
@@ -179,7 +182,7 @@ export default function Main({ match }) {
                     ) : (
                             <div className="empty">Acabou</div>
                         )}
-                         <button type="button" onClick={() => setVerMatch(null)}>Fechar</button>
+                    <button type="button" onClick={() => setVerMatch(null)}>Fechar</button>
                 </div>
             )}
         </div>

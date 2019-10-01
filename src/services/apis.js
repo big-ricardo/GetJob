@@ -1,6 +1,7 @@
 import axios from 'axios'
 const api  = axios.create({
-    baseURL: 'https://getjobserver.herokuapp.com',
+    baseURL: 'http://localhost:3333',
+    // baseURL: 'http://getjobserver.herokuapp.com',
 })
 
 export default api

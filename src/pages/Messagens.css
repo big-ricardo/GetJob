@@ -1,0 +1,77 @@
+.message-container {
+  height: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+}
+
+.envio-container {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.mensagens-box {
+  width: 90%;
+  margin-left: 5%;
+  height: 70%;
+  overflow: auto;
+  background-color: white;
+  position: initial;
+}
+
+.inputTexto {
+  width: 80%;
+  height: 40px;
+  margin-left: 5%;
+  border-radius: 10px;
+}
+
+.botaao {
+  width: 10%;
+  height: 40px;
+  border-radius: 200px;
+}
+
+.messageE {
+    background-color: #e1ffc7;
+    border-width: 0px 0 10px 10px;
+    border-color: transparent transparent transparent black;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-width: 500px;
+    margin-left: 70%;
+    padding: 20px;
+    border-radius: 50px 0 25px 50px;
+}
+
+.loggedMessage {
+  padding: 10px;
+  display: inline-block;
+  float: right;
+  width: 100%;
+  position: relative;
+  text-align: right;
+  margin-right: 0;
+
+}
+
+.targetMessage {
+    padding: 10px;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .messageR {
+    background-color: rgba(255,99,71,0.9);
+    border-width: 0px 0 10px 10px;
+    border-color: transparent transparent transparent black;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-width: 500px;
+    margin-right: 70%;
+    padding: 20px;
+    border-radius: 0 50px 25px 50px;
+}

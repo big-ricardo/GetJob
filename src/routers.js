@@ -10,6 +10,8 @@ import CadastroEmp from './pages/LoginEmp'
 import FeedPessoal from './pages/MainDev'
 import CriaVaga from './pages/CriaVaga'
 import teste from './pages/teste'
+import Messagens from './pages/Messagens'
+import MessagensEmp from './pages/MensagensEmp'
 
 export default function Routes(){
     return(
@@ -23,6 +25,8 @@ export default function Routes(){
             <Route path="/criavaga/:id" exact component={CriaVaga}/>
             <Route path="/emp/:id" exact component={HomeEmp}/>
             <Route path="/teste" exact component={teste}/>
+            <Route path="/mensagens/:id/:idE" exact component={Messagens}/>
+            <Route path="/mensagensE/:id/:idE" exact component={MessagensEmp}/>
         </BrowserRouter>
     )
 }
