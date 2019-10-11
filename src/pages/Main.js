@@ -105,8 +105,9 @@ export default function Main({ match }) {
                     <Row id="Row">
                         {users.map(user => (
                             <Col id="Col" key={user._id} xs={{ size: 8, offset: 2 }} sm={{ size: 9, offset: 2 }} md={{ size: 5, offset: 1 }} lg={{ size: 4, offset: 1 }} xl={{ size: 3, offset: 1 }}>
+                                 <div className={users.length === 2 ? ("item") : ("")}>
                                 <div className="box-card">
-                                    <div className="imgBx">
+                                    <div className="imgBx"> 
                                         <img src={user.avatar} alt={user.name} />
                                     </div>
                                     <div className="content">
@@ -127,7 +128,7 @@ export default function Main({ match }) {
                                             </button>
                                         </div>
                                     </div>
-                                </div>
+                                </div></div>
                             </Col>
                         ))}
                     </Row>
@@ -145,7 +146,7 @@ export default function Main({ match }) {
                     <button type="button" onClick={() => setMachDev(null)}>Fechar</button>
                 </div>
             )}
-
+            
             {verMatchs && (
                 <div className="matchVer-container">
                     {matchsEmpLog.length > 0 ? (
@@ -155,7 +156,7 @@ export default function Main({ match }) {
                             <Row id="Row">
                                 {matchsEmpLog.map(user => (
                                     <Col id="Col" key={user._id} xs={{ size: 8, offset: 2 }} sm={{ size: 9, offset: 2 }} md={{ size: 5, offset: 1 }} lg={{ size: 4, offset: 1 }} xl={{ size: 3, offset: 1 }}>
-                                        <div className="item"><div className="box-card">
+                                        <div className={matchsEmpLog.length === 2 ? ("item") : ("")}><div className="box-card">
                                             <div className="imgBx">
                                                 <img src={user.avatar} alt={user.name} />
                                             </div>

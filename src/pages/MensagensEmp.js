@@ -26,13 +26,13 @@ export default function Login({ history, match }) {
             })
             setTarget(dev.data)
             console.log(emp)
-        }
-        loadUsers();
+        }// eslint-disable-next-line 
+        loadUsers();// eslint-disable-next-line 
     }, [match.params.id])
 
     async function handleSubmit(e) {
         e.preventDefault()
-
+        // eslint-disable-next-line 
         const response = await api.post(`/mess/${idtargetUser}`, {
             id: idloggedUser,
             message,
@@ -53,8 +53,8 @@ export default function Login({ history, match }) {
             setMessagens([...mss])
             var objDiv = document.querySelector(".mensagens-box");
             objDiv.scrollTop = objDiv.scrollHeight;
-        })
-
+        })// eslint-disable-next-line 
+        // eslint-disable-next-line 
     }, [match.params.id])
 
     return (
