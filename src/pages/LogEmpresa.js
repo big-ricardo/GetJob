@@ -30,6 +30,8 @@ export default function Login({ history }) {
     }
 
     return (
+    <div className="fundo-login">
+     <div className="card-log">
         <div className="login-container">
 
             <form onSubmit={handleSubmit}>
@@ -72,13 +74,14 @@ export default function Login({ history }) {
 
                 <a href="/cadastroemp"><h4 className="Link">Fazer Cadastro</h4></a>
             </form>
-
-
-
         </div>
 
 
-    );
+     </div>
+</div>
+     );
+    
+    
 }
 
 

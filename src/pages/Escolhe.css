@@ -73,6 +73,7 @@ h1 {
     height: 15px;
     font-size: 100%;
     color: rgb(26, 19, 19);
+   
 }
 nav{
    width: 80%; 
@@ -115,6 +116,6 @@ nav{
     height: 300px;
     width:90%;
     margin:auto;
-    margin-bottom: 400px;
+    display: inline;
 }
 

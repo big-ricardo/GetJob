@@ -28,6 +28,8 @@ export default function Login({history}) {
     }
     
     return (
+    <div className="fundo-login">
+      <div className="card-log">
         <div className="login-container">
             <form onSubmit= {handleSubmit}>
             <Link to="/">
@@ -53,6 +55,8 @@ export default function Login({history}) {
                 <button type="submit" className="botao">Enviar</button>
             </form>         
         </div>
+      </div>
+    </div>
     );
   }
 
