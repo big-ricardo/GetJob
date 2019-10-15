@@ -75,7 +75,7 @@ export default function Login({ history, match }) {
                         }
                     </div>
                 ) : (
-                        <div className="empty">Acabou</div>
+                 <div className="empty">Inicie uma conversa!</div>
                     )}
             </div>
             <div className="envio-container=">

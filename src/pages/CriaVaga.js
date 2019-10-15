@@ -29,6 +29,8 @@ export default function CriaVaga({match, history}) {
     }
     
     return (
+            <div className="fundo-login">
+            <div className="card-log-c">
         <div className="login-container">
             <form onSubmit= {handleSubmit}>
             <Link to="/">
@@ -65,7 +67,7 @@ export default function CriaVaga({match, history}) {
                 <button type="submit" className="botao">Enviar</button>
                 <a href="/loginemp"><h4 className="link">Fazer Login</h4></a>
             </form>       
-        </div>
+        </div> </div> </div>
     );
   }
 

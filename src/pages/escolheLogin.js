@@ -3,11 +3,17 @@ import logo from '../assets/logoGet.svg'
 import comerci from '../assets/comercial.png'
 import pesso from '../assets/pesoal.png'
 import slide3 from "../assets/slide3.jpg"
+import contrato from "../assets/contrato.jpg"
+import git from "../assets/Redes/git.png"
+import gmail from "../assets/Redes/gmail.png"
+import insta from "../assets/Redes/insta.png"
+import android from "../assets/Redes/android.png"
+import ios from "../assets/Redes/ios.png"
 import log from '../assets/Icone/favicon (1).ico'
 import './Escolhe.css'
 import { Row, Col, Container } from 'reactstrap'
 import { UncontrolledCarousel } from 'reactstrap';
-
+// eslint-disable-next-line
 const item = new Array();
 var imagem = new Image();
 imagem.src = "https://resultadosdigitais.com.br/blog/files/2015/08/imcreator-imagem.jpg";
@@ -55,8 +61,18 @@ export default function Login({ history }) {
     return (
 
         <body>
-            <center><nav> <div className="inicio"><img src={log} alt="tindev" className="logoo" /><img src={logo} alt="tindev" className="logo" /></div></nav></center>
-            
+           
+             <nav> 
+                 <div className="inicio">
+                     <img src={log} alt="tindev" className="logoo" /><img src={logo} alt="tindev" className="logo" />
+                 </div>
+                 <ul>
+                     <li>
+                        
+                    </li>
+                </ul>
+             </nav>
+         
             <div className="container">
             <Container>
                 <Row>
@@ -68,42 +84,74 @@ export default function Login({ history }) {
                 </Row>
             </Container>
             <br/>
-                <div className="expla texto ">
-                    <div>
-                        <h1>Quem somos?</h1>
-                    </div><br />
-                    <div>
-                        <p>O getJob() é uma ampla plataforma que tem o objetivo de facilitar a vida de quem esta a procura de um emprego ou estagios
-                            e para a divulgação dessas vagas.
-                    </p><br />
-                        <p>Tendo assim dois tipos de contas!</p>
+             
+                <center><h1>Quem somos?</h1></center>  
+                          <p>O getJob() é uma ampla plataforma voltada para a área de Informática que tem como objetivo ajudar os profissionais da 
+                              área a encontrar as melhores vagas. <br/>Na nossa plataforma você pode:</p>
+                    <div className="qs">
+                        
+                        <div className="lista">
+                          <ul>
+                            <li>Entrar como Úsuario com seu perfil do GitHub</li>
+                            <li>Visualizar vagas de <strong>empregos</strong> ou <strong>estágios</strong></li>
+                            <li>Mostrar interesse nas vagas desejadas</li>
+                          </ul>
+                        </div>
+                        <center><img className="cont" src={contrato} alt="Cont"/></center>
+                        <div className="lista1">
+                          <ul>
+                            <li>Criar o cadastro da sua Empresa</li>
+                            <li>Criar e divulgar vagas</li>
+                            <li>Escolher o candidato ideal e conversar com ele pelo chat dentro da plataforma</li>
+                          </ul>
+                          </div>
+                        
                     </div>
-                </div>
-                <div className=" expla container">
-                </div>
+                    
+                
+               <div className="contas"> 
+               <p className="tipo">Escolha a conta ideal para você!</p>
                 <div className='collum'>
-                    <div class=" texto">
-                        <br />
+                    
+                    <div class=" texto1">
+                        
                         <h2>Conta Pessoal</h2>
                         <a className="efeito" href="logindev"><img src={pesso} alt="logo" width="200px" /></a>
-                        <h3>Conta voltada para pessoas em busca de empregos ou estagios!</h3>
+                        <h3>Conta voltada para pessoas em busca de empregos ou estágios!</h3>
                     </div>
                     <div class=" texto">
-                        <br />
+                        
                         <h2>Conta Comercial</h2>
                         <a className="efeito" href="loginemp">
                             <img src={comerci} alt="logo" width="200px" />
                         </a>
                         <h3>Conta voltada para empresas que dejesam divulgar suas vagas!</h3>
                     </div>
-                </div><br /><br /><br />
-                <div className="rodape">
-                    <center> Luís-Açucena-Luan getJob() 2019</center>
+                </div>
                 </div>
                 <script src='./acoes.js' />
                 <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
             </div>
+            <footer className="rodape">
+               <div className="rods">
+                  <p className="rod1">Desenvolvedores:<br/>Luís Ricardo Albano Santos<br/>Açucena Lemes A. Silva<br/>Luan Lucas da Silva</p>
+                  <p className="rod">  Redes Sociais:<br/>
+                  <a  href="#"><img className="redes2" src={git} alt="git"/></a>
+                  <a  href="#"><img className="redes1" src={gmail} alt="git"/></a>
+                  <a  href="#"><img className="redes2" src={insta} alt="git"/></a>
+                  
+                  </p>
+                  <p className="rod">Apps:<br/>
+                  <a  href="#"><img className="redes2" src={android} alt="git"/></a>
+                  <a  href="#"><img className="redes2" src={ios} alt="git"/></a>
+                  </p>
+                </div>
+               <p className="final">2019 - getJob - Todos os direitos reservados.</p>  
+               
+           </footer> 
+           
         </body>
+        
     );
 }
 

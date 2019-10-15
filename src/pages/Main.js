@@ -105,30 +105,30 @@ export default function Main({ match }) {
                     <Row id="Row">
                         {users.map(user => (
                             <Col id="Col" key={user._id} xs={{ size: 8, offset: 2 }} sm={{ size: 9, offset: 2 }} md={{ size: 5, offset: 1 }} lg={{ size: 4, offset: 1 }} xl={{ size: 3, offset: 1 }}>
-                                 <div className={users.length === 2 ? ("item") : ("")}>
-                                <div className="box-card">
-                                    <div className="imgBx"> 
-                                        <img src={user.avatar} alt={user.name} />
-                                    </div>
-                                    <div className="content">
-                                        <div className="top">
-                                            <strong>{user.name}</strong>
+                                <div className={users.length === 2 ? ("item") : ("")}>
+                                    <div className="box-card">
+                                        <div className="imgBx">
+                                            <img src={user.avatar} alt={user.name} />
                                         </div>
-                                        <div className="texto">
-                                            <p><strong>Usuario:</strong>  {user.user}</p>
-                                            <p><strong>Repositorios:</strong>  {user.repositorios}</p>
-                                            <p><strong>Localidade:</strong>  {user.cidade}</p>
+                                        <div className="content">
+                                            <div className="top">
+                                                <strong>{user.name}</strong>
+                                            </div>
+                                            <div className="texto">
+                                                <p><strong>Usuario:</strong>  {user.user}</p>
+                                                <p><strong>Repositorios:</strong>  {user.repositorios}</p>
+                                                <p><strong>Localidade:</strong>  {user.cidade}</p>
+                                            </div>
+                                            <div className="buttons">
+                                                <button type="button" onClick={() => handleDeslike(user._id)}>
+                                                    <img src={deslike} alt="deslike" />
+                                                </button>
+                                                <button type="button" onClick={() => handleLike(user._id)}>
+                                                    <img src={like} alt="deslike" />
+                                                </button>
+                                            </div>
                                         </div>
-                                        <div className="buttons">
-                                            <button type="button" onClick={() => handleDeslike(user._id)}>
-                                                <img src={deslike} alt="deslike" />
-                                            </button>
-                                            <button type="button" onClick={() => handleLike(user._id)}>
-                                                <img src={like} alt="deslike" />
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div></div>
+                                    </div></div>
                             </Col>
                         ))}
                     </Row>
@@ -146,7 +146,7 @@ export default function Main({ match }) {
                     <button type="button" onClick={() => setMachDev(null)}>Fechar</button>
                 </div>
             )}
-            
+
             {verMatchs && (
                 <div className="matchVer-container">
                     {matchsEmpLog.length > 0 ? (

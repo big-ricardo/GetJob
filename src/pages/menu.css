@@ -16,26 +16,30 @@ header {
     box-sizing: border-box;
     font-weight: bold;
     z-index: 9;
+    display: flex;
+    flex: 1;
+    align-items: center;
 }
 
 header a:link {
     text-decoration: none;
 }
 
+header a {
+    margin-top: -7px;
+}
+
 header .logo {
     color: #fff;
     height: 50px;
     line-height: 50px;
-    margin-left: 100px;
-    padding-top: 6px;
-    padding-bottom: 4px;
     font-size: 24px;
     font-weight: bold;
 }
 
 header nav {
-    float: right;
     box-shadow: 0 30px 30px rgba(87, 85, 85, 0);
+    width: 100%;
 }
 
 header nav ul {
@@ -43,6 +47,8 @@ header nav ul {
     padding: 0;
     display: flex;
     float: right;
+    margin-top: 6px;
+    margin-bottom: -6px;
 }
 
 header nav ul div.logi {
@@ -57,6 +63,7 @@ header nav ul li {
     padding-top: 6px;
     padding-bottom: 4px;
     position: relative;
+   
 }
 
 header nav ul li a img{
@@ -64,6 +71,8 @@ header nav ul li a img{
     margin-left: 5px;
     border: 2px solid #fff;
     border-radius: 360px;
+   
+  
 }
 
 header nav ul li .perf h3{

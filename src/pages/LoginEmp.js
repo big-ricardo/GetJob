@@ -1,27 +1,19 @@
-import React, { useState, useMemo } from 'react'
+import React, { useState } from 'react'
 import logo from '../assets/logoGet.svg'
 import { Link } from 'react-router-dom'
 import './Login.css'
 import api from '../services/apis'
-import camera from '../assets/camera.svg'
+//import camera from '../assets/camera.svg'
 
 export default function Login({ history }) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [cidade, setCiadade] = useState('');
     const [email, setEmail] = useState('');
-    const [thumbnail, setthumbnail] = useState(null)
     let imagem;
-
-    let preview = useMemo(() =>{
-        let n = thumbnail ? URL.createObjectURL(thumbnail): null
-        console.log(n)
-        return thumbnail ? URL.createObjectURL(thumbnail): null
-    }, [thumbnail])
 
     function selectFileHandle(e){
         imagem = { selectFile: e.target.files[0]}
-        setthumbnail(imagem.selectFile)
     }
 
     async function handleSubmit(e) {
@@ -52,13 +44,15 @@ export default function Login({ history }) {
     }
 
     return (
+        <div className="fundo-login1">
+        <div className="card-log1">
         <div className="login-container">
             <form onSubmit={handleSubmit}>
                 <br/><br/><br/>
                 <Link to="/">
                     <img src={logo} className="logo" alt="Tindev" />
                 </Link>
-                <label id="thumbnail" style={{BackgroundImage: `url(${preview})`}}>
+                {/* <label id="thumbnail">
                 <input
                     type="file"
                     required
@@ -67,7 +61,7 @@ export default function Login({ history }) {
                     onChange={e => selectFileHandle(e)}
                 />
                 <img src={camera} alt="Imagem"/>
-                </label>
+                </label> */}
                 <input
                     type="text"
                     placeholder="Nome da Empresa"
@@ -98,7 +92,6 @@ export default function Login({ history }) {
                 />
                 <input
                     type="file"
-                    required
                     placeholder="Imagem"
                     value={imagem}
                     onChange={e => selectFileHandle(e)}
@@ -106,6 +99,8 @@ export default function Login({ history }) {
                 <button type="submit" className="botao">Enviar</button>
                 <a href="/loginemp"><h4 className="link">Fazer Login</h4></a>
             </form>
+        </div>
+        </div>
         </div>
     );
 }

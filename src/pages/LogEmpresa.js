@@ -62,16 +62,7 @@ export default function Login({ history }) {
 
                 <button className="botao" type="submit">
                     Enviar
-							</button>
-
-
-                {/* <div class="wrap-login100-form-btn">
-							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn" type="submit">
-                            Enviar
-							</button>
-						</div> */}
-
+				</button>
                 <a href="/cadastroemp"><h4 className="Link">Fazer Cadastro</h4></a>
             </form>
         </div>

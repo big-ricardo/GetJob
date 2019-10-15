@@ -16,7 +16,7 @@
   margin-left: 5%;
   height: 70%;
   overflow: auto;
-  background-color: white;
+  background: rgb(255, 255, 255) url(../assets/wall.jpg)no-repeat;
   position: initial;
 }
 
@@ -31,6 +31,8 @@
   width: 10%;
   height: 40px;
   border-radius: 200px;
+  background-color: rgb(62, 245, 184);
+  font-size: 18px;
 }
 
 .messageE {
