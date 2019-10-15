@@ -13,6 +13,7 @@ import log from '../assets/Icone/favicon (1).ico'
 import './Escolhe.css'
 import { Row, Col, Container } from 'reactstrap'
 import { UncontrolledCarousel } from 'reactstrap';
+import instaladorAndroid from '../Instaladores/universal.apk'
 // eslint-disable-next-line
 const item = new Array();
 var imagem = new Image();
@@ -106,24 +107,24 @@ export default function Login({ history }) {
                 <div className="qs">
                     <div className="lista">
                         <ul>
-                            <li className="efeito">Entrar como Úsuario com seu perfil do GitHub</li>
-                            <li className="efeito">Visualizar vagas de <strong>empregos</strong> ou <strong>estágios</strong></li>
-                            <li className="efeito">Mostrar interesse nas vagas desejadas</li>
+                            <div className="efeito"><li className="efeito">Entrar como Úsuario com seu perfil do GitHub</li></div>
+                            <div className="efeito"><li className="efeito">Visualizar vagas de <strong>empregos</strong> ou <strong>estágios</strong></li></div>
+                            <div className="efeito"><li className="efeito">Mostrar interesse nas vagas desejadas</li></div>
                         </ul>
                     </div>
                     <center><img className="cont" src={contrato} alt="Cont" /></center>
                     <div className="lista1">
                         <ul>
-                            <li className="efeito">Criar o cadastro da sua Empresa</li>
-                            <li className="efeito">Criar e divulgar vagas</li>
-                            <li >Escolher o candidato ideal e conversar com ele pelo chat dentro da plataforma</li>
+                            <div className="efeito"><li>Criar o cadastro da sua Empresa</li></div>
+                            <div className="efeito"><li>Criar e divulgar vagas</li></div>
+                            <div className="efeito"><li>Escolher o candidato ideal e conversar com ele pelo chat dentro da plataforma</li></div>
                         </ul>
                     </div>
 
                 </div>
                 <script src='./acoes.js' />
                 <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
-            </div>
+            </div >
             <footer className="rodape">
                 <div className="rods">
                     <p className="rod1 rod"><strong>Desenvolvedores:</strong><br />Luís Ricardo Albano Santos<br />Açucena Lemes A. Silva<br />Luan Lucas da Silva</p>
@@ -135,7 +136,7 @@ export default function Login({ history }) {
                     </p>
 
                     <p className="rod">Apps:<br />
-                        <a href=" "><img className="redes2" src={android} alt="git" /></a>
+                        <a href={instaladorAndroid}><img className="redes2" src={android} alt="git" /></a>
                         <a href=" "><img className="redes2" src={ios} alt="git" /></a>
                     </p>
                 </div>
@@ -143,7 +144,7 @@ export default function Login({ history }) {
             </footer>
 
 
-        </body>
+        </body >
     );
 }
 
