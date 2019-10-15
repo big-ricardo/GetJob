@@ -170,14 +170,17 @@ header nav ul li a.active {
 
 /* Responsividade do menu */
 
-@media(max-width: 1235px) {
+@media(max-width: 1000px) {
     header {
-        padding: 0px 15px;
+        padding: 12px 15px;
         background: #800000;
+        width: 100%;
     }
     .menu-toggle {
-        display: block;
+        position: absolute;
+        display: flex;
         transition: all 1s;
+        right: 20px;
     }
 
     .menu-toggle:hover img{
