@@ -259,10 +259,7 @@ nav {
 
     .cor{
       width: 100%;
-    }
-
-    .inicio{
-      margin-left: 5%;
+      margin-left: 0;
     }
 
 }
