@@ -176,7 +176,7 @@ export default function Main({ match }) {
                                                     <p><strong>Localidade:</strong>  {user.cidade}</p>
                                                     <p><strong>Email Contato:</strong>  {user.emailContato}</p>
                                                     <div className="buttonss">
-                                                        <a href={`/mensagens/${match.params.id}/${user._id}`}>Ver vaga</a>
+                                                        <a href={`/mensagens/${match.params.id}/${user._id}`}>Mensagens</a>
                                                     </div>
                                                 </div>
                                             </div>

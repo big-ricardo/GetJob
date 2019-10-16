@@ -123,6 +123,11 @@
   transition: 0.5s;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: #F4F4F4;
+}
+
 .main-container #Row #Col .buttons button:hover {
   transform: translateY(-5px);
   transition: all 0.2s;

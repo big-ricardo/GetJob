@@ -4,33 +4,48 @@
   flex: 1;
   flex-direction: column;
   position: relative;
+  background-color: rgba(61, 48, 48, 0.5);
+}
+
+nav{
+  box-shadow: none;
 }
 
 .envio-container {
   width: 90%;
   margin-left: 5%;
+  margin-top: 5px;
 }
 
 .mensagens-box {
   width: 90%;
   margin-left: 5%;
-  height: 70%;
+  height: 81%;
   overflow: auto;
-  background: rgb(255, 255, 255) url(../assets/wall.jpg)no-repeat;
+  background: rgba(255, 255, 255, 0.5) url(../assets/wall.jpg)no-repeat;
   position: initial;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: #F4F4F4;
 }
 
 .inputTexto {
   width: 80%;
-  height: 40px;
+  height: 50px;
   margin-left: 5%;
   border-radius: 10px;
+  margin-right: 2px;
+  padding: 1;
 }
 
 .botaao {
   width: 10%;
-  height: 40px;
-  border-radius: 200px;
+  padding: 1px;
+  height: 50px;
+  border-radius: 0 10px;
   background-color: rgb(62, 245, 184);
   font-size: 18px;
 }
@@ -76,4 +91,18 @@
     margin-right: 70%;
     padding: 20px;
     border-radius: 0 50px 25px 50px;
+}
+
+@media(max-Width: 770px){
+  .botaao{
+    width: auto;
+  }
+  .mensagens-box{
+    width: 98%;
+    margin-left: 1%;
+  }
+  .inputTexto{
+    margin-left: 1%;
+    width: 85%;
+  }
 }
