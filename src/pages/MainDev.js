@@ -87,7 +87,7 @@ export default function Main({ match }) {
         <div className="main-container">
             {!matchDev && !verMatchs && (
                 <header className="fixar">
-                    <a className="logo" href=" ">
+                    <a className="logo" href="/">
                         <img src={logo} className='logoo' alt="logo" />
                         getJob()
                 </a>
