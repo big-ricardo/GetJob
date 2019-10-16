@@ -4,7 +4,14 @@
   width: 50%;
 }
 body {
-  background-color: rgb(236, 236, 236);
+  background-image: url("../assets/fundo.jpg");
+}
+
+.cor{
+  width: 90%;
+  margin-left: 5%;
+  background-color: rgba(236, 236, 236, 0.8);
+  border: 2px solid rgba(146, 88, 88, 0.7);
 }
 
 .redes1 {
@@ -84,6 +91,10 @@ li {
 }
 .contas {
   text-align: center;
+  width: 100%;
+  display: flex;
+  flex:1;
+  flex-direction: column;
 }
 
 p {
@@ -203,7 +214,7 @@ nav {
   height: 100%;
   display: flex;
   flex: 1;
-  background-color: rgb(247, 247, 247);
+  background-color: #fff;
   justify-content: center;
   align-items: center;
 
@@ -212,6 +223,11 @@ nav {
 
 .Bpessoal {
   margin-right: 100px;
+}
+
+.rodi{
+  width: 10%;
+  margin-bottom: -50px;
 }
 
 .carrosel {
@@ -227,7 +243,23 @@ nav {
     }
 
     .lista{
-        margin-right: 30%;
+        margin-right: 5%;
+    }
+
+    .texto1{
+      margin-right: 0px;
+    }
+
+    .texto{
+      margin-left: 0px;
+    }
+
+    .rodape{
+      margin-top: 50px;
+    }
+
+    .cor{
+      width: 100%;
     }
 
 }
