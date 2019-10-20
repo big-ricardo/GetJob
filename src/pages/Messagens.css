@@ -7,7 +7,7 @@
   background-color: rgba(61, 48, 48, 0.5);
 }
 
-nav{
+nav {
   box-shadow: none;
 }
 
@@ -22,14 +22,14 @@ nav{
   margin-left: 5%;
   height: 81%;
   overflow: auto;
-  background: rgba(255, 255, 255, 0.5) url(../assets/wall.jpg)no-repeat;
+  background: rgba(255, 255, 255, 0.3) url(../assets/wall.jpg) center no-repeat;
   position: initial;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar {
   width: 0px;
-  background: #F4F4F4;
+  background: #f4f4f4;
 }
 
 .inputTexto {
@@ -51,16 +51,16 @@ nav{
 }
 
 .messageE {
-    background-color: #e1ffc7;
-    border-width: 0px 0 10px 10px;
-    border-color: transparent transparent transparent black;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    max-width: 500px;
-    margin-left: 70%;
-    padding: 20px;
-    border-radius: 50px 0 25px 50px;
+  background-color: #e1ffc7;
+  border-width: 0px 0 10px 10px;
+  border-color: transparent transparent transparent black;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  max-width: 500px;
+  margin-left: 70%;
+  padding: 20px;
+  border-radius: 50px 0 25px 50px;
 }
 
 .loggedMessage {
@@ -71,38 +71,65 @@ nav{
   position: relative;
   text-align: right;
   margin-right: 0;
-
 }
 
 .targetMessage {
-    padding: 10px;
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .messageR {
-    background-color: rgba(255,99,71,0.9);
-    border-width: 0px 0 10px 10px;
-    border-color: transparent transparent transparent black;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    max-width: 500px;
-    margin-right: 70%;
-    padding: 20px;
-    border-radius: 0 50px 25px 50px;
+  padding: 10px;
+  width: 100%;
+  margin-left: 0;
 }
 
-@media(max-Width: 770px){
-  .botaao{
-    width: auto;
+.messageR {
+  background-color: rgba(255, 99, 71, 1);
+  border-width: 0px 0 10px 10px;
+  border-color: transparent transparent transparent black ;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  max-width: 500px;
+  margin-right: 70%;
+  padding: 20px;
+  border-radius: 0 50px 25px 50px;
+}
+
+@media (max-width: 770px) {
+  .botaao {
+    width: 16%;
+    padding: 0 10px;
   }
-  .mensagens-box{
+  .mensagens-box {
     width: 98%;
     margin-left: 1%;
   }
-  .inputTexto{
+  .inputTexto {
     margin-left: 1%;
-    width: 85%;
+    width: 80%;
+  }
+
+  .loggedMessage {
+    width: 200%;
+  }
+
+  .messageR {
+    margin-right: 37%;;
+  }
+}
+
+@media (max-width: 400px) {
+  .inputTexto {
+    width: 75%;
+  }
+  .botaao {
+    width: auto;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 300px) {
+  .inputTexto {
+    width: 75%;
+  }
+  .botaao {
+    width: auto;
   }
 }
