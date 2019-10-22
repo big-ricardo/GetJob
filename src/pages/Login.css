@@ -1,11 +1,38 @@
+/*background*/
 .login-container{
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-   
+}
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+.fundo-login{
+  min-height: 100%;
+}
+.fundo-login{
+  background: #000 url('../assets/slide3.jpg') no-repeat;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased !important;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.fundo-login1{
+  background: #000 url('../assets/slide3.jpg') no-repeat;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased !important;
+  display: flex;
+  flex: 1;
+  align-items: center;
 }
 
+
+/*formulario*/
 .login-container form{
     width: 90%;
     max-width: 300px;
@@ -58,7 +85,7 @@ h4{
     outline: none;
     text-decoration: inherit;
 }
-
+/*recebe a imagem*/
  #thumbnail{
   margin-bottom: 20px;
   border: 1px dashed #ddd;
@@ -87,27 +114,10 @@ button:hover {
 iframe {
 	border: none !important;
 }
+/*cards*/
 
 
 
-
-*{
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  box-sizing: border-box;
-}
-.fundo-login{
-  min-height: 100%;
-}
-.fundo-login{
-  background: #000 url('../assets/slide3.jpg') no-repeat;
-  background-size: cover;
-  -webkit-font-smoothing: antialiased !important;
-  display: flex;
-  flex: 1;
-  align-items: center;
-}
 .card-log{
   position: relative;
   width: 300px;
@@ -134,12 +144,4 @@ iframe {
   box-shadow: 0 30px 30px #77747480;
   background-color: rgba(24, 22, 22, 0.26);
   border-radius: 10px;
-}
-.fundo-login1{
-  background: #000 url('../assets/slide3.jpg') no-repeat;
-  background-size: cover;
-  -webkit-font-smoothing: antialiased !important;
-  display: flex;
-  flex: 1;
-  align-items: center;
 }

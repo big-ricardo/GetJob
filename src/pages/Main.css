@@ -1,5 +1,6 @@
 .main-container{
     width: 100%; 
+    text-align: center;
 }
 
 .main-container #Row{
@@ -37,16 +38,17 @@
     line-height: 30px;
     max-width: 400px;
     color:    rgba(255, 255, 255, 0.8);
+    
 }
 
 .main-container button{
-    border: 0px;
     background: none;
     font-weight: none;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 01);
     font-size: 18px;
     margin-top: 30px;
     cursor: pointer;
+    
 }
 
 .matchVer-container{
@@ -61,4 +63,12 @@
 
 .matchVer-container .imgMatch{
     margin-top: 30px;
+}
+
+.match-container p, .match-container strong{
+    color: white;
+}
+
+.main-container .empty{
+    color: white;
 }

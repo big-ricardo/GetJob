@@ -1,3 +1,4 @@
+/* estilo da pagina*/
 .expla {
   opacity: 0.8;
   height: 100%;
@@ -13,7 +14,48 @@ body {
   background-color: rgba(236, 236, 236, 0.8);
   border: 2px solid rgba(146, 88, 88, 0.7);
 }
+.inicio {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex: 1;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+nav {
+  width: 100%;
+  box-shadow: 0px 0px 10px 10px white;
+}
+.container {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+.logo {
+  width: 200px;
+}
+
+.logoo {
+  width: 50px;
+}
+
+
+
+/* carrosel*/
+.carrosel {
+  height: 300px;
+  width: 90%;
+  margin: auto;
+  display: inline;
+}
+
+/* redes sociais*/
 .redes1 {
   width: 35px;
   height: 35px;
@@ -26,16 +68,9 @@ body {
   margin-top: 10px;
   margin-left: 10px;
 }
-.collum {
-  display: flex;
-  width: 100%;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: unset;
-  flex-direction: row;
-}
 
+
+/*apresentação das contas*/
 .titulo {
   height: 100%;
   width: 100%;
@@ -55,31 +90,6 @@ p {
   text-align: center;
   margin-left: 40px;
 }
-.lista {
-  width: 70%;
-  height: auto;
-  color: black;
-  font-size: 24px;
-
-  margin-left: 20px;
-  list-style-image: url(../assets/check.svg);
-}
-li {
-  margin-bottom: 15px;
-}
-.lista1 {
-  width: 70%;
-  height: auto;
-  color: black;
-  font-size: 24px;
-  list-style-image: url(../assets/check.svg);
-}
-.cont {
-  width: 80%;
-  height: 80%;
-  align-self: center;
-  margin-right: 25px;
-}
 
 .texto1 {
   width: 70%;
@@ -89,13 +99,7 @@ li {
 
   margin-right: 40px;
 }
-.contas {
-  text-align: center;
-  width: 100%;
-  display: flex;
-  flex:1;
-  flex-direction: column;
-}
+
 
 p {
   font-family: inherit;
@@ -115,7 +119,6 @@ p {
   margin-bottom: 30px;
   margin-top: 50px;
 }
-
 h2 {
   font-size: 2.5rem;
   font-weight: bolder;
@@ -133,6 +136,8 @@ h1 {
   color: #041858;
   align-self: center;
 }
+
+/*lista de atributos*/
 .qs {
   background-color: rgb(236, 236, 236);
   margin-top: 20px;
@@ -145,6 +150,29 @@ h1 {
   justify-content: center;
   flex-direction: row;
 }
+
+.lista {
+  width: 70%;
+  height: auto;
+  color: black;
+  font-size: 24px;
+
+  margin-left: 20px;
+  list-style-image: url(../assets/check.svg);
+}
+li {
+  margin-bottom: 15px;
+}
+.lista1 {
+  width: 70%;
+  height: auto;
+  color: black;
+  font-size: 24px;
+  list-style-image: url(../assets/check.svg);
+}
+
+
+/*botões*/
 .efeito :hover {
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
@@ -152,6 +180,36 @@ h1 {
   -o-transform: scale(1.05);
   transform: scale(1.05);
 }
+.Bpessoal {
+  margin-right: 100px;
+}
+.contas {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex:1;
+  flex-direction: column;
+}
+.cont {
+  width: 80%;
+  height: 80%;
+  align-self: center;
+  margin-right: 25px;
+}
+.collum {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: unset;
+  flex-direction: row;
+}
+
+
+
+
+/*rodape*/
 .rodape {
   width: 100%;
   color: #000000;
@@ -188,54 +246,17 @@ h1 {
   margin-top: 10px;
 }
 
-nav {
-  width: 100%;
-  box-shadow: 0px 0px 10px 10px white;
-}
-.container {
-  display: flex;
-  width: 100%;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 
-.logo {
-  width: 200px;
-}
 
-.logoo {
-  width: 50px;
-}
-
-.inicio {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex: 1;
-  background-color: #fff;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
-}
-
-.Bpessoal {
-  margin-right: 100px;
-}
-
+/*link para o download do app*/
 .rodi{
   width: 10%;
   margin-bottom: -50px;
+  margin-left: 25px;
 }
 
-.carrosel {
-  height: 300px;
-  width: 90%;
-  margin: auto;
-  display: inline;
-}
 
+/*responsividade*/
 @media(max-Width: 770px){
     .cont{
         display: none;

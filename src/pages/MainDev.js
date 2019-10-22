@@ -139,7 +139,7 @@ export default function Main({ match }) {
                     </Row>
                 </Container>
             ) : (
-                    <div className="empty">Acabou</div>
+                    <div className="empty">Esta vaga ainda não possui like</div>
                 )}
 
             {matchDev && (
@@ -186,7 +186,7 @@ export default function Main({ match }) {
                             </Row>
                         </Container>
                     ) : (
-                            <div className="empty">Acabou</div>
+                            <div className="empty">Você não possui nenhum match ainda</div>
                         )}
 
                     <button type="button" onClick={() => setVerMatch(null)}>Fechar</button>

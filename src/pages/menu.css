@@ -4,6 +4,9 @@
 
 
 /* corpo do menu */
+header .fechar{
+    color: yellow;
+}
 
 header {
     top: 0;
@@ -232,3 +235,4 @@ header nav ul li a.active {
  .fixar{
      position: fixed;
  }
+

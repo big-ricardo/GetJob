@@ -134,14 +134,14 @@ export default function Main({ match }) {
                     </Row>
                 </Container>
             ) : (
-                    <div className="empty">Acabou</div>
+                    <div className="empty">Esta vaga ainda não possui nenhum like</div>
                 )}
 
             {matchDev && (
                 <div className="match-container">
                     <img src={matchImage} alt="itsMatch" />
                     <img className="avatar" src={matchDev.avatar} alt="Avatar" />
-                    <strong>{matchDev.name}</strong>
+                    <strong className="teste">{matchDev.name}</strong>
                     <p>{matchDev.bio}</p>
                     <button type="button" onClick={() => setMachDev(null)}>Fechar</button>
                 </div>
@@ -181,7 +181,7 @@ export default function Main({ match }) {
                             </Row>
                         </Container>
                     ) : (
-                            <div className="empty">Acabou</div>
+                            <div className="empty">Você não possui nenhum match ainda</div>
                         )}
                     <button type="button" onClick={() => setVerMatch(null)}>Fechar</button>
                 </div>

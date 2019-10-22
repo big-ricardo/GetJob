@@ -4,7 +4,7 @@ import './Login.css'
 import api from '../services/apis'
 import {Alert} from 'reactstrap'
 import {Link} from'react-router-dom'
-
+/*função que recebe o nome e a senha do usuario e passa para api */
 export default function Login({history}) {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
@@ -17,7 +17,7 @@ export default function Login({history}) {
             user:username, 
             senha: password,
         });
-
+        /*recebe a resposta(id) da api e eniva o usuario ao home*/
         const {_id} = response.data;
         
         if(_id){
@@ -29,17 +29,19 @@ export default function Login({history}) {
     
     return (
     <div className="fundo-login">
+    {/*criação do card onde sera realizado o cadastro */}
       <div className="card-log">
         <div className="login-container">
             <form onSubmit= {handleSubmit}>
             <Link to="/">
                 <img src={logo} className="logo" alt="Tindev"/>
             </Link>
+            {/*erro caso não foi possivel encontrar o usuario*/}
             {error && (
                 <Alert color="danger">
                <strong>Algo deu Errado!</strong>Revise seu e Email e Senha
               </Alert>
-            )}
+            )}{/*campos que recebem os dados digitados pelo usuario */}
                 <input 
                     type="text" 
                     placeholder="Seu usuario do GitHub" 

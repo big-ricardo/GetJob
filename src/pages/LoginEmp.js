@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import './Login.css'
 import api from '../services/apis'
 //import camera from '../assets/camera.svg'
-
+// recebe os dados inseridos nos campos
 export default function Login({ history }) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -25,7 +25,7 @@ export default function Login({ history }) {
         const resp = await api.post('/upload', datas)
         const { avatar} = resp.data
         console.log(avatar)
-
+        //criação do usuario atraves da api
         if (avatar) {
             const response = await api.post('/emps', {
                 user: username,
@@ -44,7 +44,8 @@ export default function Login({ history }) {
     }
 
     return (
-        <div className="fundo-login1">
+        <div className="fundo-login">
+        {/*criação do card onde sera realizado o cadastro*/}
         <div className="card-log1">
         <div className="login-container">
             <form onSubmit={handleSubmit}>
@@ -62,6 +63,7 @@ export default function Login({ history }) {
                 />
                 <img src={camera} alt="Imagem"/>
                 </label> */}
+                {/*campos que irão receber os dados */}
                 <input
                     type="text"
                     placeholder="Nome da Empresa"

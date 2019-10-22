@@ -4,7 +4,7 @@ import {Alert} from 'reactstrap'
 import './Login.css'
 import { Link } from 'react-router-dom'
 import api from '../services/apis'
-
+// função que recebe os dados dos campos e passa para api
 export default function Login({ history }) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -18,7 +18,7 @@ export default function Login({ history }) {
             senha: password,
             type: true
         });
-
+        // api devolve o id do usuario e carrega o home
         const { _id } = response.data;
 
 
@@ -31,6 +31,7 @@ export default function Login({ history }) {
 
     return (
     <div className="fundo-login">
+     {/*criação do card onde sera realizado o cadastro */}
      <div className="card-log">
         <div className="login-container">
 
@@ -38,11 +39,13 @@ export default function Login({ history }) {
                 <Link to="/">
                     <img src={logo} className="logo" alt="Tindev" />
                 </Link>
+                {/*mostra um erro caso não encontre o usuario*/}
                 {error && (
                     <Alert color="danger">
                         <strong>Algo deu Errado!</strong>Revise seu e Email e Senha
               </Alert>
                 )}
+                {/*campos para o usuario preencher*/}
                 <input
                     type="text"
                     placeholder="Nome da Empresa"
