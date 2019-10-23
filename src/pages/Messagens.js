@@ -24,7 +24,13 @@ export default function Login({ history, match }) {
                 headers: { user: match.params.id }
             })
             setLogged(dev.data)
-            console.log(loggedUser)
+            const mens = await api.get(`/mess/${idtargetUser}`, {
+                headers: { user: idloggedUser, op: 'dev' }
+            })
+            mss = mens.data
+            setMessagens(mss)
+            var objDiv = document.querySelector(".mensagens-box");
+            objDiv.scrollTop = objDiv.scrollHeight;
         }
         loadUsers();// eslint-disable-next-line 
     }, [match.params.id])
@@ -36,9 +42,9 @@ export default function Login({ history, match }) {
             id: idloggedUser,
             message,
         }, {
-            headers: { user: idloggedUser }
+            headers: { user: idloggedUser, op: 'dev' }
         });
-        setMessage("")
+        setMessage('')
         var objDiv = document.querySelector(".mensagens-box");
         objDiv.scrollTop = objDiv.scrollHeight;
     }
@@ -75,7 +81,7 @@ export default function Login({ history, match }) {
                         }
                     </div>
                 ) : (
-                 <center><div className="empty">Inicie uma conversa!</div></center>
+                        <center><div className="empty">Inicie uma conversa!</div></center>
                     )}
             </div>
             <div className="envio-container=">

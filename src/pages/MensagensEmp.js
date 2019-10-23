@@ -25,7 +25,13 @@ export default function Login({ history, match }) {
                 headers: { user: match.params.idE }
             })
             setTarget(dev.data)
-            console.log(emp)
+            const mens = await api.get(`/mess/${idtargetUser}`, {
+                headers: { user: idloggedUser, op: 'emp'}
+            })
+            mss = mens.data
+            setMessagens(mss)
+            var objDiv = document.querySelector(".mensagens-box");
+            objDiv.scrollTop = objDiv.scrollHeight;
         }// eslint-disable-next-line 
         loadUsers();// eslint-disable-next-line 
     }, [match.params.id])
@@ -37,7 +43,7 @@ export default function Login({ history, match }) {
             id: idloggedUser,
             message,
         }, {
-            headers: { user: idloggedUser }
+            headers: { user: idloggedUser,  op:'emp' }
         });
         setMessage("")
         var objDiv = document.querySelector(".mensagens-box");
