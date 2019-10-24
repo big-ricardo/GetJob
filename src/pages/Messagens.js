@@ -26,7 +26,7 @@ export default function Login({ history, match }) {
             setLogged(dev.data)
             const mens = await api.get(`/mess/${idtargetUser}`, {
                 headers: { user: idloggedUser, op: 'dev' }
-            })
+            })// eslint-disable-next-line
             mss = mens.data
             setMessagens(mss)
             var objDiv = document.querySelector(".mensagens-box");

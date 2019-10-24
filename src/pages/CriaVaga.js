@@ -1,6 +1,5 @@
 import React, { useState } from  'react'
 import logo from '../assets/logoGet.svg'
-import {Link} from'react-router-dom'
 import './Login.css'
 import api from '../services/apis'
 
@@ -33,9 +32,7 @@ export default function CriaVaga({match, history}) {
             <div className="card-log-c">
         <div className="login-container">
             <form onSubmit= {handleSubmit}>
-            <Link to="/">
                 <img src={logo} className="logo" alt="Tindev"/>
-            </Link>
                 <input 
                     type="text" 
                     placeholder="Atuação" 
@@ -65,7 +62,6 @@ export default function CriaVaga({match, history}) {
                     onChange={e => setEmail(e.target.value)}
                 />
                 <button type="submit" className="botao">Enviar</button>
-                <a href="/loginemp"><h4 className="link">Fazer Login</h4></a>
             </form>       
         </div> </div> </div>
     );

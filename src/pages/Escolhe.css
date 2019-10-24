@@ -156,9 +156,9 @@ h1 {
   height: auto;
   color: black;
   font-size: 24px;
-
   margin-left: 20px;
   list-style-image: url(../assets/check.svg);
+  margin-left: 29px;
 }
 li {
   margin-bottom: 15px;

@@ -16,12 +16,7 @@ import { UncontrolledCarousel } from 'reactstrap';
 import instaladorAndroid from '../Instaladores/universal.apk'
 // eslint-disable-next-line
 // criação do carrosel
-const item = new Array();
-var imagem = new Image();
-imagem.src = "https://resultadosdigitais.com.br/blog/files/2015/08/imcreator-imagem.jpg";
-imagem.width = 500;
-imagem.height = 100;
-item[0] = imagem;
+
 //criação de um vetor que recebe as imagens do carrosel
 const items = [
     {
@@ -119,9 +114,9 @@ export default function Login({ history }) {
                         {/*lista mostrando os atributos de cada conta*/}
                         <div className="lista">
                             <ul>
-                                <div className="efeito"><li className="efeito">Entrar como Úsuario com seu perfil do GitHub</li></div>
-                                <div className="efeito"><li className="efeito">Visualizar vagas de <strong>empregos</strong> ou <strong>estágios</strong></li></div>
-                                <div className="efeito"><li className="efeito">Mostrar interesse nas vagas desejadas</li></div>
+                                <div className="efeito"><li >Entrar como Úsuario com seu perfil do GitHub</li></div>
+                                <div className="efeito"><li >Visualizar vagas de <strong>empregos</strong> ou <strong>estágios</strong></li></div>
+                                <div className="efeito"><li >Mostrar interesse nas vagas desejadas</li></div>
                             </ul>
                         </div>
                         <center><img className="cont" src={contrato} alt="Cont" /></center>
@@ -143,9 +138,9 @@ export default function Login({ history }) {
                         <p className="rod1 rod"><strong>Desenvolvedores:</strong><br />Luís Ricardo Albano Santos<br />Açucena Lemes A. Silva<br />Luan Lucas da Silva</p>
                        {/*links para redes social e para o download do app*/}
                         <p className="rod"><strong>Redes Sociais:</strong> <br />
-                            <a href="#"><img className="redes2" src={git} alt="git" /></a>
-                            <a href="#"><img className="redes1" src={gmail} alt="git" /></a>
-                            <a href="#"><img className="redes2" src={insta} alt="git" /></a>
+                            <a href=" "><img className="redes2" src={git} alt="git" /></a>
+                            <a href=" "><img className="redes1" src={gmail} alt="git" /></a>
+                            <a href="https://www.instagram.com/getjob_info/?hl=pt-br" target="_blank"><img className="redes2" src={insta} alt="git" /></a>
 
                         </p>
 
