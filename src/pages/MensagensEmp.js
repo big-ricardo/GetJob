@@ -75,7 +75,7 @@ export default function Login({ history, match }) {
                                     {mess.id === idloggedUser ? (
                                         <div className="loggedMessage"><div className="messageE"><strong>{loggedUser.user}</strong><div className="text">{mess.message}</div></div></div>
                                     ) : (
-                                            <div className="targetMessage"><div className="messageR"><strong>{targetUser.user}</strong><div className="text">{mess.message}</div></div></div>
+                                            <div className="targetMessage"><div className="messageR"><strong className="text1">{targetUser.user}</strong><div className="text1">{mess.message}</div></div></div>
                                         )}
                                 </div>
                             ))

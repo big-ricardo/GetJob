@@ -140,6 +140,7 @@ export default function Login({ history }) {
                         <p className="rod"><strong>Redes Sociais:</strong> <br />
                             <a href=" "><img className="redes2" src={git} alt="git" /></a>
                             <a href=" "><img className="redes1" src={gmail} alt="git" /></a>
+                            {/*eslint-disable-next-line*/} 
                             <a href="https://www.instagram.com/getjob_info/?hl=pt-br" target="_blank"><img className="redes2" src={insta} alt="git" /></a>
 
                         </p>
