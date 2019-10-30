@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.c594dc43.chunk.css",
+    "main.css": "/static/css/main.371ee5ca.chunk.css",
     "main.js": "/static/js/main.d4a739a9.chunk.js",
     "main.js.map": "/static/js/main.d4a739a9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c6f97aec.js",
@@ -9,10 +9,10 @@
     "static/js/2.bb1cb7f4.chunk.js": "/static/js/2.bb1cb7f4.chunk.js",
     "static/js/2.bb1cb7f4.chunk.js.map": "/static/js/2.bb1cb7f4.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8720e802cdbfd402f419039c3c915f82.js": "/precache-manifest.8720e802cdbfd402f419039c3c915f82.js",
+    "precache-manifest.0a57777d78f79540b1969500263ef7d0.js": "/precache-manifest.0a57777d78f79540b1969500263ef7d0.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.266e55a5.chunk.css.map": "/static/css/2.266e55a5.chunk.css.map",
-    "static/css/main.c594dc43.chunk.css.map": "/static/css/main.c594dc43.chunk.css.map",
+    "static/css/main.371ee5ca.chunk.css.map": "/static/css/main.371ee5ca.chunk.css.map",
     "static/media/android.png": "/static/media/android.1f3a742f.png",
     "static/media/Escolhe.css": "/static/media/fundo.edf569da.jpg",
     "static/media/comercial.png": "/static/media/comercial.fb58e217.png",
