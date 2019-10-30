@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.ec83a50c.chunk.css",
-    "main.js": "/static/js/main.6b4aca40.chunk.js",
-    "main.js.map": "/static/js/main.6b4aca40.chunk.js.map",
+    "main.css": "/static/css/main.c594dc43.chunk.css",
+    "main.js": "/static/js/main.d4a739a9.chunk.js",
+    "main.js.map": "/static/js/main.d4a739a9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c6f97aec.js",
     "runtime-main.js.map": "/static/js/runtime-main.c6f97aec.js.map",
     "static/css/2.266e55a5.chunk.css": "/static/css/2.266e55a5.chunk.css",
-    "static/js/2.c2f4def3.chunk.js": "/static/js/2.c2f4def3.chunk.js",
-    "static/js/2.c2f4def3.chunk.js.map": "/static/js/2.c2f4def3.chunk.js.map",
+    "static/js/2.bb1cb7f4.chunk.js": "/static/js/2.bb1cb7f4.chunk.js",
+    "static/js/2.bb1cb7f4.chunk.js.map": "/static/js/2.bb1cb7f4.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.55987e34e087cb133a43ecc272683d8d.js": "/precache-manifest.55987e34e087cb133a43ecc272683d8d.js",
+    "precache-manifest.8720e802cdbfd402f419039c3c915f82.js": "/precache-manifest.8720e802cdbfd402f419039c3c915f82.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.266e55a5.chunk.css.map": "/static/css/2.266e55a5.chunk.css.map",
-    "static/css/main.ec83a50c.chunk.css.map": "/static/css/main.ec83a50c.chunk.css.map",
+    "static/css/main.c594dc43.chunk.css.map": "/static/css/main.c594dc43.chunk.css.map",
+    "static/media/android.png": "/static/media/android.1f3a742f.png",
+    "static/media/Escolhe.css": "/static/media/fundo.edf569da.jpg",
     "static/media/comercial.png": "/static/media/comercial.fb58e217.png",
+    "static/media/contrato.jpg": "/static/media/contrato.a4bc3e48.jpg",
     "static/media/dislike.svg": "/static/media/dislike.d4ec34e8.svg",
     "static/media/favicon (1).ico": "/static/media/favicon (1).3b78e3d7.ico",
     "static/media/itsamatch.png": "/static/media/itsamatch.21c10b26.png",
@@ -21,6 +24,8 @@
     "static/media/logo.png": "/static/media/logo.77c1824e.png",
     "static/media/logoGet.svg": "/static/media/logoGet.9e3d5c78.svg",
     "static/media/pesoal.png": "/static/media/pesoal.1ee0d578.png",
-    "static/media/Login.css": "/static/media/slide1.da7ba2a0.jpg"
+    "static/media/slide3.jpg": "/static/media/slide3.9c3f8987.jpg",
+    "static/media/universal.apk": "/static/media/universal.01f37c67.apk",
+    "static/media/Messagens.css": "/static/media/wall.7d2e2b36.jpg"
   }
 }
