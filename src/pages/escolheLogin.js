@@ -13,7 +13,7 @@ import log from '../assets/Icone/favicon (1).ico'
 import './Escolhe.css'
 import { Row, Col, Container } from 'reactstrap'
 import { UncontrolledCarousel } from 'reactstrap';
-import instaladorAndroid from '../Instaladores/universal.apk'
+import instaladorAndroid from '../Instaladores/getJob.apk'
 // eslint-disable-next-line
 // criação do carrosel
 
@@ -138,7 +138,7 @@ export default function Login({ history }) {
                         <p className="rod1 rod"><strong>Desenvolvedores:</strong><br />Luís Ricardo Albano Santos<br />Açucena Lemes A. Silva<br />Luan Lucas da Silva</p>
                        {/*links para redes social e para o download do app*/}
                         <p className="rod"><strong>Redes Sociais:</strong> <br />
-                            <a href=" "><img className="redes2" src={git} alt="git" /></a>
+                            <a href="https://github.com/Luiss1569/Frontend-getJob" target="_blank"><img className="redes2" src={git} alt="git" /></a>
                             <a href=" "><img className="redes1" src={gmail} alt="git" /></a>
                             {/*eslint-disable-next-line*/} 
                             <a href="https://www.instagram.com/getjob_info/?hl=pt-br" target="_blank"><img className="redes2" src={insta} alt="git" /></a>
