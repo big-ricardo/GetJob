@@ -1,6 +1,5 @@
 import React from 'react'
 import logo from '../assets/logoGet.svg'
-import slide3 from "../assets/slide3.jpg"
 import git from "../assets/Redes/git.png"
 import gmail from "../assets/Redes/gmail.png"
 import insta from "../assets/Redes/insta.png"
@@ -47,10 +46,10 @@ export default function Login() {
                                             <p><strong>Redes Sociais:</strong><div className="efeito">
                                                 {/*eslint-disable-next-line*/}
 
-                                                <a href="https://github.com/Luiss1569/Frontend-getJob" target="_blank"><img className="redes2" src={git} alt="git" /></a>
-                                                <a href=" "><img className="redes1" src={gmail} alt="git" /></a>
+                                                <a href="https://github.com/Luiss1569" target="_blank"><img className="redes2" src={git} alt="git" /></a>
+                                                <a href="mailto:luisricardo0626@gmail.com"target="_blank"><img className="redes1" src={gmail} alt="git" /></a>
                                                 {/*eslint-disable-next-line*/}
-                                                <a href="https://www.instagram.com/getjob_info/?hl=pt-br" target="_blank"><img className="redes2" src={insta} alt="git" /></a>
+                                                <a href="https://www.instagram.com/luis_ricardo.js/?hl=pt-br" target="_blank"><img className="redes2" src={insta} alt="git" /></a>
                                             </div></p>
                                         </div>
 
@@ -104,10 +103,9 @@ export default function Login() {
                                                 <a href="https://github.com/Luiss1569/Frontend-getJob" target="_blank"><img className="redes2" src={git} alt="git" /></a>
                                                 <a href=" "><img className="redes1" src={gmail} alt="git" /></a>
                                                 {/*eslint-disable-next-line*/}
-                                                <a href="https://www.instagram.com/getjob_info/?hl=pt-br" target="_blank"><img className="redes2" src={insta} alt="git" /></a>
+                                                <a href="https://www.instagram.com/luanlucaslemesdasilva/?hl=pt-br" target="_blank"><img className="redes2" src={insta} alt="git" /></a>
                                             </div></p>
                                         </div>
-
 
                                     </div>
                                 </div>
@@ -192,7 +190,7 @@ maior facilidade. </p>
                         {/*links para redes social e para o download do app*/}
                         <p className="rod"><strong>Redes Sociais:</strong> <br />{/*eslint-disable-next-line*/}
                             <a href="https://github.com/Luiss1569/Frontend-getJob" target="_blank"><img className="redes2" src={git} alt="git" /></a>
-                            <a href=" "><img className="redes1" src={gmail} alt="git" /></a>
+                            <a href="mailto:getjob.cep@gmail.com"><img className="redes1" src={gmail} alt="git" /></a>
                             {/*eslint-disable-next-line*/}
                             <a href="https://www.instagram.com/getjob_info/?hl=pt-br" target="_blank"><img className="redes2" src={insta} alt="git" /></a>
 
