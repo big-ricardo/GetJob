@@ -50,21 +50,23 @@ export default function Main({ match }) {
                     <Row id="Row">
                         {users.map(user => (
                             <Col id="Col" key={user._id} xs={{ size: 8, offset: 2 }} sm={{ size: 9, offset: 2 }} md={{ size: 5, offset: 1 }} lg={{ size: 4, offset: 1 }} xl={{ size: 3, offset: 1 }}>
-                                <div className="box-card">
-                                    <div className="imgBx">
-                                        <img src={user.avatar} alt={user.user} />
-                                    </div>
-                                    <div className="content">
-                                        <div className="top">
-                                            <strong>{user.atuacao}</strong>
+                                <div className={users.length === 2 ? ("item") : ("")}>
+                                    <div className="box-card">
+                                        <div className="imgBx">
+                                            <img src={user.avatar} alt={user.user} />
                                         </div>
-                                        <div className="texto">
-                                            <p><strong>Usuario:</strong>  {user.user}</p>
-                                            <p><strong>Descrição:</strong>  {user.descricao}</p>
-                                            <p><strong>Localidade:</strong>  {user.cidade}</p>
-                                        </div>
-                                        <div className="buttonss">
-                                            <a href={`/homevaga/${user._id}`}>Ver vaga</a>
+                                        <div className="content">
+                                            <div className="top">
+                                                <strong>{user.atuacao}</strong>
+                                            </div>
+                                            <div className="texto">
+                                                <p><strong>Usuario:</strong>  {user.user}</p>
+                                                <p><strong>Descrição:</strong>  {user.descricao}</p>
+                                                <p><strong>Localidade:</strong>  {user.cidade}</p>
+                                            </div>
+                                            <div className="buttonss">
+                                                <a href={`/homevaga/${user._id}`}>Ver vaga</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

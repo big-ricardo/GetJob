@@ -6,6 +6,7 @@
 }
 body {
   background-image: url("../assets/fundo.jpg");
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .cor{
@@ -98,6 +99,10 @@ p {
   text-align: center;
 
   margin-right: 40px;
+}
+
+a:hover{
+  text-decoration:none;
 }
 
 
@@ -246,16 +251,12 @@ li {
   margin-top: 10px;
 }
 
-
-
 /*link para o download do app*/
 .rodi{
   width: 10%;
   margin-bottom: -50px;
   margin-left: 25px;
 }
-
-
 /*responsividade*/
 @media(max-Width: 770px){
     .cont{
@@ -282,5 +283,4 @@ li {
       width: 100%;
       margin-left: 0;
     }
-
 }

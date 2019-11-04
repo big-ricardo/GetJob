@@ -92,12 +92,14 @@ export default function Login({ history }) {
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                 />
-                <input
+                <label className="arq"><input
+                    className="file"
                     type="file"
                     placeholder="Imagem"
                     value={imagem}
                     onChange={e => selectFileHandle(e)}
                 />
+                </label>
                 <button type="submit" className="botao">Enviar</button>
                 <a href="/loginemp"><h4 className="link">Fazer Login</h4></a>
             </form>

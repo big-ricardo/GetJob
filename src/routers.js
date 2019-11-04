@@ -12,6 +12,7 @@ import CriaVaga from './pages/CriaVaga'
 import teste from './pages/teste'
 import Messagens from './pages/Messagens'
 import MessagensEmp from './pages/MensagensEmp'
+import Credito from './pages/Creditos'
 
 export default function Routes(){
     return(
@@ -27,6 +28,7 @@ export default function Routes(){
             <Route path="/teste" exact component={teste}/>
             <Route path="/mensagens/:id/:idE" exact component={Messagens}/>
             <Route path="/mensagensE/:id/:idE" exact component={MessagensEmp}/>
+            <Route path="/creditos" exact component={Credito}/>
         </BrowserRouter>
     )
 }

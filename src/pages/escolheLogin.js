@@ -41,34 +41,21 @@ const items = [
     }
 ];
 
-export default function Login({ history }) {
-
-
-    //  function componentDidMount() {
-    //     window.onscroll = () => handleScroll()
-    //   }   
-
-    //   function handleScroll(){
-    //     if (document.documentElement.scrollTop  + document.querySelector('#root') >= document.documentElement.scrollHeight) {
-    //         console.log('final')
-    //       } 
-    //}
-
-
+export default function Login() {
 
     return (
 
         <body>
 
             {/*criando a navbar*/}
-                <nav>
-                    <div className="inicio">
-                        <img src={log} alt="tindev" className="logoo" /><img src={logo} alt="tindev" className="logo" />
-                    </div>
-                </nav>
-                <div className="cor">
-                <div className="container"><br/><br/>
-                {/*adicionando o carrosel e defenindo a responsividade*/}
+            <nav>
+                <div className="inicio">
+                    <img src={log} alt="tindev" className="logoo" /><img src={logo} alt="tindev" className="logo" />
+                </div>
+            </nav>
+            <div className="cor">
+                <div className="container"><br /><br />
+                    {/*adicionando o carrosel e defenindo a responsividade*/}
                     <Container>
                         <Row>
                             <Col xs={{ size: 0 }} sm={{ size: 12 }} md={{ size: 12 }} lg={{ size: 12 }} xl={{ size: 12 }}>
@@ -81,29 +68,35 @@ export default function Login({ history }) {
                     <br />
 
                     <center><h1>Quem somos?</h1></center>
-                    <p>O getJob() é uma ampla plataforma voltada para a área de Informática que tem como objetivo ajudar os profissionais da
-                              área a encontrar as melhores vagas. <br /></p>
+                    <p>O getJob() é uma ampla plataforma voltada à Informática a qual tem como objetivo ajudar os profissionais da
+                              área a encontrar as melhores vagas. <br />
+                        {/* <div className="efeito">
+                        <br/>
+                            <a href="/creditos">Saiba Mais...</a>
+                        </div> */}
+                    </p>
+
                     <p className="tipo"><strong>Baixe nosso Aplicativo!</strong> <p className="">
                         {/*adicionando link para baixar o app*/}
-                      <div className="efeito">  
-                        <a href={instaladorAndroid}><img className="rodi" src={android} alt="git" /></a>
-                        <a href=" "><img className="rodi" src={ios} alt="git" /></a>
-                      </div>
+                        <div className="efeito">
+                            <a href={instaladorAndroid}><img className="rodi" src={android} alt="git" /></a>
+                            <a href=" "><img className="rodi" src={ios} alt="git" /></a>
+                        </div>
                     </p></p>
 
 
                     <div className="contas">
                         <p className="tipo">Escolha a conta ideal para você!</p>
                         <div className='collum'>
-                        {/*botões para os tipos de cadastro*/}
+                            {/*botões para os tipos de cadastro*/}
                             <div class=" texto1">
                                 <h2>Conta Pessoal</h2>
-                                <h3>Conta voltada para pessoas em busca de empregos ou estágios!</h3>
+                                <h3>Conta voltada para pessoas em busca de empregos ou estágios.</h3>
                                 <a className="efeito" href="logindev"><img src={pesso} alt="logo" width="200px" /></a>
                             </div>
                             <div class=" texto">
                                 <h2>Conta Comercial</h2>
-                                <h3>Conta voltada para empresas que dejesam divulgar suas vagas!</h3>
+                                <h3>Conta voltada para empresas que dejesam divulgar suas vagas.</h3>
                                 <a className="efeito" href="loginemp">
                                     <img src={comerci} alt="logo" width="200px" />
                                 </a>
@@ -136,11 +129,11 @@ export default function Login({ history }) {
                 <footer className="rodape">
                     <div className="rods">
                         <p className="rod1 rod"><strong>Desenvolvedores:</strong><br />Luís Ricardo Albano Santos<br />Açucena Lemes A. Silva<br />Luan Lucas da Silva</p>
-                       {/*links para redes social e para o download do app*/}
-                        <p className="rod"><strong>Redes Sociais:</strong> <br />
+                        {/*links para redes social e para o download do app*/}
+                        <p className="rod"><strong>Redes Sociais:</strong> <br />{/*eslint-disable-next-line*/}
                             <a href="https://github.com/Luiss1569/Frontend-getJob" target="_blank"><img className="redes2" src={git} alt="git" /></a>
                             <a href=" "><img className="redes1" src={gmail} alt="git" /></a>
-                            {/*eslint-disable-next-line*/} 
+                            {/*eslint-disable-next-line*/}
                             <a href="https://www.instagram.com/getjob_info/?hl=pt-br" target="_blank"><img className="redes2" src={insta} alt="git" /></a>
 
                         </p>
