@@ -105,6 +105,9 @@ a:hover{
   text-decoration:none;
 }
 
+.not{
+  cursor: not-allowed;
+}
 
 p {
   font-family: inherit;

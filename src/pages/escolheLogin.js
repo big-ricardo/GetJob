@@ -80,7 +80,7 @@ export default function Login() {
                         {/*adicionando link para baixar o app*/}
                         <div className="efeito">
                             <a href={instaladorAndroid}><img className="rodi" src={android} alt="git" /></a>
-                            <a href=" "><img className="rodi" src={ios} alt="git" /></a>
+                            <a className="not"><img className="rodi" src={ios} alt="git" /></a>
                         </div>
                     </p></p>
 
@@ -140,7 +140,7 @@ export default function Login() {
 
                         <p className="rod"><strong> Apps:</strong> <br />
                             <a href={instaladorAndroid}><img className="redes2" src={android} alt="git" /></a>
-                            <a href=" "><img className="redes2" src={ios} alt="git" /></a>
+                            <a className="not"><img className="redes2" src={ios} alt="git" /></a>
                         </p>
                     </div>
                     <p className="final"><strong> 2019 - getJob() - Todos os direitos reservados.</strong> </p>

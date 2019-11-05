@@ -198,7 +198,7 @@ maior facilidade. </p>
 
                         <p className="rod"><strong> Apps:</strong> <br />
                             <a href={instaladorAndroid}><img className="redes2" src={android} alt="git" /></a>
-                            <a href=" "><img className="redes2" src={ios} alt="git" /></a>
+                            <a className="not"><img className="redes2" src={ios} alt="git" /></a>
                         </p>
                     </div>
                     <p className="final"><strong> 2019 - getJob() - Todos os direitos reservados.</strong> </p>
