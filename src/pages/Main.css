@@ -6,6 +6,7 @@
 
 .main-container #Row{
     margin-top: 30px;
+    margin-left: -9%;
 }
 
 .match-container{
@@ -74,4 +75,24 @@
 
 .main-container .empty{
     color: white;
+}
+
+@media(max-Width: 1200px){
+    .main-container #Row{
+        margin-left: -0%;
+    }
+}
+
+@media(max-Width: 1000px){
+    .main-container #Row{
+        margin-left: -5%;
+    }
+
+    .kkk{
+        margin-left: 5%;
+    }
+
+    .kkkk{
+        margin-left: 4%;
+    }
 }

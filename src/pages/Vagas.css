@@ -32,3 +32,9 @@
     border-width: 5%;
     border-color: rgb(78, 74, 74);
 }
+
+@media(max-Width: 1000px){
+    .vagas-container #Row{
+        margin-left: -4%;
+    }
+}

@@ -2,7 +2,6 @@ import React from 'react'
 import logo from '../assets/logoGet.svg'
 import comerci from '../assets/comercial.png'
 import pesso from '../assets/pesoal.png'
-import slide3 from "../assets/slide3.jpg"
 import contrato from "../assets/contrato.jpg"
 import git from "../assets/Redes/git.png"
 import gmail from "../assets/Redes/gmail.png"
@@ -14,26 +13,29 @@ import './Escolhe.css'
 import { Row, Col, Container } from 'reactstrap'
 import { UncontrolledCarousel } from 'reactstrap';
 import instaladorAndroid from '../Instaladores/getJob.apk'
+import pri from "../assets/primeira.jpg"
+import seg from "../assets/segunda.jpg"
+import terc from "../assets/terceira.jpg"
 // eslint-disable-next-line
 // criação do carrosel
 
 //criação de um vetor que recebe as imagens do carrosel
 const items = [
     {
-        src: 'https://resultadosdigitais.com.br/blog/files/2015/08/imcreator-imagem.jpg',
+        src:pri,
         caption: 'Quer facilitar sua vida?',
         header: 'Seja Bem Vindo!',
         key: '1'
     },
     {
-        src: 'https://cdn.pixabay.com/photo/2015/02/02/11/09/office-620822_960_720.jpg',
+        src:seg,
         altText: 'Arrume um emprego de um jeito Facil!',
         caption: 'De um jeito Facil e Dinamico!',
         header: 'Poste suas Vagas Aqui!',
         key: '2'
     },
     {
-        src: slide3,
+        src: terc,
         altText: 'Arrume um emprego de um jeito Facil!',
         caption: 'Arrume um emprego de um jeito Facil!',
         header: 'Quer um emprego?',

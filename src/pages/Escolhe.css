@@ -261,6 +261,14 @@ li {
   margin-left: 25px;
 }
 /*responsividade*/
+
+
+@media(max-Width: 1000px){
+  #Row{
+      margin-left: -12%;
+  }
+}
+
 @media(max-Width: 770px){
     .cont{
         display: none;
