@@ -183,10 +183,16 @@
   .item {
     margin-right: 0px;
   }
+  .box-card {
+    margin-left: -0%;
+  }
 }
 
 @media (max-width: 770px) {
   .item{
     margin-left: -11%;
+  }
+  .box-card {
+    margin-left: -1%;
   }
 }
