@@ -102,7 +102,7 @@ export default function Main({ match }) {
             <br /><br /><br /><br />
             {users.length > 0 ? (
                 <Container>
-                    <Row id="Row">
+                    <Row>
                         {users.map(user => (
                             <Col id="Col" className="kkk" key={user._id} xs={{ size: 8, offset: 2 }} sm={{ size: 9, offset: 2 }} md={{ size: 5, offset: 1 }} lg={{ size: 4, offset: 1 }} xl={{ size: 3, offset: 1 }}>
                                 <div className={users.length === 2 ? ("item") : ("")}>
@@ -153,7 +153,7 @@ export default function Main({ match }) {
 
                         <Container>
                             <img className="imgMatch" src={matchImage} alt="Its a Match" />
-                            <Row id="Row">
+                            <Row >
                                 {matchsEmpLog.map(user => (
                                     <Col id="Col" className="kkkk" key={user._id} xs={{ size: 8, offset: 2 }} sm={{ size: 9, offset: 2 }} md={{ size: 5, offset: 1 }} lg={{ size: 4, offset: 1 }} xl={{ size: 3, offset: 1 }}>
                                         <div className={matchsEmpLog.length === 2 ? ("item") : ("")}><div className="box-card">

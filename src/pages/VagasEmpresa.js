@@ -47,7 +47,7 @@ export default function Main({ match }) {
             </header><br /><br /><br /><br />
             {users.length > 0 ? (
                 <Container>
-                    <Row id="Row">
+                    <Row>
                         {users.map(user => (
                             <Col id="Col" key={user._id} xs={{ size: 8, offset: 2 }} sm={{ size: 9, offset: 2 }} md={{ size: 5, offset: 1 }} lg={{ size: 4, offset: 1 }} xl={{ size: 3, offset: 1 }}>
                                 <div className={users.length === 2 ? ("item") : ("")}>
