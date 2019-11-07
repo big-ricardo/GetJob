@@ -72,10 +72,10 @@ export default function Login() {
                     <center><h1>Quem somos?</h1></center>
                     <p>O getJob() é uma ampla plataforma voltada à Informática a qual tem como objetivo ajudar os profissionais da
                               área a encontrar as melhores vagas. <br />
-                        {/* <div className="efeito">
+                        <div className="efeito">
                         <br/>
                             <a href="/creditos">Saiba Mais...</a>
-                        </div> */}
+                        </div>
                     </p>
 
                     <p className="tipo"><strong>Baixe nosso Aplicativo!</strong> <p className="">

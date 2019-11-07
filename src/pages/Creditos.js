@@ -11,6 +11,8 @@ import "./card.css"
 import { Row, Col, Container } from 'reactstrap'
 import instaladorAndroid from '../Instaladores/getJob.apk'
 import Luis from '../assets/luis.jpeg'
+import Luan from '../assets/luan.jpeg'
+import Acucena from '../assets/acucena.jpeg'
 // eslint-disable-next-line
 
 export default function Login() {
@@ -40,9 +42,9 @@ export default function Login() {
                                             <center><strong>  Luis Ricardo</strong></center>
                                         </div>
                                         <div className="texto">
-                                            <p><strong>Usuario:</strong>luiss1569</p>
+                                            <p><strong>Usuario:</strong> luiss1569</p>
                                             <p><strong>Cargo:</strong> Fourder e CEO</p>
-                                            <p><strong>Localidade:</strong>São Bento do Sapucai</p>
+                                            <p><strong>Localidade:</strong> São Bento do Sapucai-SP</p>
                                             <p><strong>Redes Sociais:</strong><div className="efeito">
                                                 {/*eslint-disable-next-line*/}
 
@@ -60,23 +62,21 @@ export default function Login() {
                             <Col id="Col" xs={{ size: 8, offset: 2 }} sm={{ size: 9, offset: 2 }} md={{ size: 5, offset: 1 }} lg={{ size: 4, offset: 1 }} xl={{ size: 3, offset: 1 }}>
                                 <div className="box-card">
                                     <div className="imgBx">
-                                        <img src={Luis} alt="Luis" />
+                                        <img src={Acucena} alt="Luis" />
                                     </div>
                                     <div className="content">
                                         <div className="top">
                                             <center><strong>  Açucena Lemes</strong></center>
                                         </div>
                                         <div className="texto">
-                                            <p><strong>Usuario:</strong>acucena123</p>
+                                            <p><strong>Usuario:</strong> açucena14</p>
                                             <p><strong>Cargo:</strong> Fourder e CFO</p>
-                                            <p><strong>Localidade:</strong>Sapucai Mirim-MG</p>
+                                            <p><strong>Localidade:</strong> Sapucai Mirim-MG</p>
                                             <p><strong>Redes Sociais:</strong><div className="efeito">
                                                 {/*eslint-disable-next-line*/}
 
-                                                <a href="https://github.com/Luiss1569/Frontend-getJob" target="_blank"><img className="redes2" src={git} alt="git" /></a>
-                                                <a href=" "><img className="redes1" src={gmail} alt="git" /></a>
+                                                <a href="mailto:assucenalemes5@gmail.com"><img className="redes1" src={gmail} alt="git" /></a>
                                                 {/*eslint-disable-next-line*/}
-                                                <a href="https://www.instagram.com/getjob_info/?hl=pt-br" target="_blank"><img className="redes2" src={insta} alt="git" /></a>
                                             </div></p>
                                         </div>
 
@@ -87,20 +87,18 @@ export default function Login() {
                             <Col id="Col" xs={{ size: 8, offset: 2 }} sm={{ size: 9, offset: 2 }} md={{ size: 5, offset: 1 }} lg={{ size: 4, offset: 1 }} xl={{ size: 3, offset: 1 }}>
                                 <div className="box-card">
                                     <div className="imgBx">
-                                        <img src={Luis} alt="Luan Lucas" />
+                                        <img src={Luan} alt="Luan Lucas" />
                                     </div>
                                     <div className="content">
                                         <div className="top">
                                             <center><strong>  Luan Lucas</strong></center>
                                         </div>
                                         <div className="texto">
-                                            <p><strong>Usuario:</strong>luan123</p>
+                                            <p><strong>Usuario:</strong> luan_lucas</p>
                                             <p><strong>Cargo:</strong> Fourder e CIO</p>
-                                            <p><strong>Localidade:</strong>Brazopolis-MG</p>
+                                            <p><strong>Localidade:</strong> Brazopolis-MG</p>
                                             <p><strong>Redes Sociais:</strong><div className="efeito">
                                                 {/*eslint-disable-next-line*/}
-
-                                                <a href="https://github.com/Luiss1569/Frontend-getJob" target="_blank"><img className="redes2" src={git} alt="git" /></a>
                                                 <a href=" "><img className="redes1" src={gmail} alt="git" /></a>
                                                 {/*eslint-disable-next-line*/}
                                                 <a href="https://www.instagram.com/luanlucaslemesdasilva/?hl=pt-br" target="_blank"><img className="redes2" src={insta} alt="git" /></a>
