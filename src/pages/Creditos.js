@@ -99,7 +99,7 @@ export default function Login() {
                                             <p><strong>Localidade:</strong> Brazopolis-MG</p>
                                             <p><strong>Redes Sociais:</strong><div className="efeito">
                                                 {/*eslint-disable-next-line*/}
-                                                <a href=" "><img className="redes1" src={gmail} alt="git" /></a>
+                                                <a href="mailto:lluanllucas@gmmail.com"><img className="redes1" src={gmail} alt="git" /></a>
                                                 {/*eslint-disable-next-line*/}
                                                 <a href="https://www.instagram.com/luanlucaslemesdasilva/?hl=pt-br" target="_blank"><img className="redes2" src={insta} alt="git" /></a>
                                             </div></p>
