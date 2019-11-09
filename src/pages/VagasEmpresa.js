@@ -11,6 +11,17 @@ export default function Main({ match }) {
     const [matchDev, setMachDev] = useState(null)
     const [loggedEmp, setEmp] = useState({});
 
+    async function handleFechar(idVaga) {
+        let conf = window.confirm("Deseja mesmo tirar essa vaga dos Anúncios?")
+        if (conf === true) {
+            await api.put(`/vags/${idVaga}`, null, { headers: { oi: 'oi' } })
+            const response = await api.get('/emps', {
+                headers: { user: match.params.id }
+            })
+            setUsers(response.data)
+        }
+    }
+
     useEffect(() => {
         async function loadUsers() {
             const dev = await api.get('/empLog', {
@@ -66,6 +77,13 @@ export default function Main({ match }) {
                                             </div>
                                             <div className="buttonss">
                                                 <a href={`/homevaga/${user._id}`}>Ver vaga</a>
+                                            </div>
+                                            <div className="fec">
+                                                {user.aberto === true ? (
+                                                    <a className="fechar" onClick={() => handleFechar(user._id)}><h6>Fechar Vaga</h6></a>
+                                                ) : (
+                                                        <h3 className="fechado">Vaga Fechada</h3>
+                                                    )}
                                             </div>
                                         </div>
                                     </div>
