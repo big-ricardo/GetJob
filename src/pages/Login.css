@@ -110,6 +110,24 @@ button {
 	background: transparent;
 }
 
+.check{
+  display: flex;
+  flex: 1;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 10px;
+  margin-left: -2px;
+}
+
+.horns{
+  margin-right: 5px;
+}
+
+h6{
+  margin-top: 17px;
+}
+
 button:hover {
 	cursor: pointer;
 }

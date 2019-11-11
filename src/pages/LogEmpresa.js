@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import logo from '../assets/logoGet.svg'
 import {Alert} from 'reactstrap'
 import './Login.css'
@@ -10,8 +10,41 @@ export default function Login({ history }) {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('')
 
+    useEffect(()=>{
+        function loadCookies(){
+            let myCookies = {}
+            var kv = document.cookie.split(";")
+            console.log(kv)
+            for(let id in kv){
+                var cookie = kv[id].split("=")
+                myCookies[cookie[0].trim()] = cookie[1];
+            }
+            if(myCookies['_userE'] !== "" && myCookies['_passwordE'] !== ""){
+                setUsername(myCookies['_userE'])
+                setPassword(myCookies['_passwordE'])
+                document.querySelector('#horns').checked = true
+            }
+        }
+        loadCookies()
+    }, [])
+
     async function handleSubmit(e) {
         e.preventDefault()
+
+        let check = document.querySelector('#horns').checked
+
+        if(check == true){
+            var myCookies = {}
+            myCookies["_userE"] = username
+            myCookies["_passwordE"] = password
+            document.cookie = ""
+            let dataExpired = new Date(Date.now()+60*1000).toString()
+            var cookieString = ''
+            cookieString = '_userE' + "=" + myCookies['_userE'] + ";" + dataExpired + ";"
+            document.cookie = cookieString
+            cookieString = '_passwordE' + "=" + myCookies['_passwordE'] + ";" + dataExpired + ";"
+            document.cookie = cookieString
+        }
 
         const response = await api.post('/emps', {
             username,
@@ -60,17 +93,15 @@ export default function Login({ history }) {
                     value={password}
                     onChange={e => setPassword(e.target.value)}
                 />
-
-
-
+                <label className="check">
+                            <input type="checkbox" id="horns" className="horns" /><h6>Lembre de Mim</h6>
+                        </label>
                 <button className="botao" type="submit">
                     Enviar
 				</button>
-                <a href="/cadastroemp"><h4 className="Link">Fazer Cadastro</h4></a>
             </form>
         </div>
-
-
+        <a href="/cadastroemp"><h4 className="Link">Fazer Cadastro</h4></a>
      </div>
 </div>
      );

@@ -46,6 +46,15 @@ export default function Main({ match }) {
         testUsers()
     }
 
+    async function sair() {
+        let cookieString =''
+        cookieString = '_user' + "=" + "" + ";" + -1 + ";"
+        document.cookie = cookieString
+        cookieString = '_password' + "=" + "myCookies['_password']" + ";" + -1 + ";"
+        document.cookie = cookieString
+        document.location.href = '/logindev'
+    }
+
     useEffect(() => {
         const socket = io('https://getjobserver.herokuapp.com', {
             query: { user: match.params.id }
@@ -59,7 +68,7 @@ export default function Main({ match }) {
 
 
     async function testUsers() {
-        if (users.length  <= 1) {
+        if (users.length <= 1) {
             setPg(pagina + 1)
             console.log(pagina)
             const respons = await api.get(`/vags?pg=${pagina}&vs=6`, {
@@ -67,7 +76,7 @@ export default function Main({ match }) {
             })
             const data = respons.data
             console.log(pagina, data.length)
-            if(data.length > 0){
+            if (data.length > 0) {
                 setUsers([...respons.data])
             }
         }
@@ -97,7 +106,7 @@ export default function Main({ match }) {
                                 <a href="# " onClick={() => setVerMatch(true)}>Matchs</a>
                             </li>
                             <li>
-                                <a role="button" href=" ">{loggedDev.user}<img src={loggedDev.avatar} alt=" " /></a>
+                                <a onClick={() =>sair()}>{loggedDev.user}<img src={loggedDev.avatar} alt=" " /></a>
                             </li>
 
                         </ul>
@@ -162,7 +171,7 @@ export default function Main({ match }) {
                             <Row>
                                 {matchsDevLog.map(user => (
                                     <Col id="Col" key={user._id} xs={{ size: 8, offset: 2 }} sm={{ size: 9, offset: 2 }} md={{ size: 5, offset: 1 }} lg={{ size: 4, offset: 1 }} xl={{ size: 3, offset: 1 }}>
-                                       <div className={matchsDevLog.length === 2 ? ("item") : ("")}><div className="box-card">
+                                        <div className={matchsDevLog.length === 2 ? ("item") : ("")}><div className="box-card">
                                             <div className="imgBx">
                                                 <img src={user.avatar} alt={user.name} />
                                             </div>

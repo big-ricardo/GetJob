@@ -22,6 +22,15 @@ export default function Main({ match }) {
         }
     }
 
+    async function sair() {
+        let cookieString = ''
+        cookieString = '_userE' + "=" + "" + ";" + -1 + ";"
+        document.cookie = cookieString
+        cookieString = '_passwordE' + "=" + "" + ";" + -1 + ";"
+        document.cookie = cookieString
+        document.location.href = '/loginemp'
+    }
+
     useEffect(() => {
         async function loadUsers() {
             const dev = await api.get('/empLog', {
@@ -49,7 +58,7 @@ export default function Main({ match }) {
                             <a href={`/criavaga/${match.params.id}`}>Criar vaga</a>
                         </li>
                         <li>
-                            <a role="button" href="/">{loggedEmp.user}<img src={loggedEmp.avatar} alt=" " /></a>
+                            <a onClick={() => sair()}>{loggedEmp.user}<img src={loggedEmp.avatar} alt=" " /></a>
                         </li>
 
                     </ul>

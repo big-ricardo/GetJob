@@ -37,8 +37,6 @@ export default function Login({ history }) {
             });
 
             const { _id } = response.data;
-
-
             history.push(`/emp/${_id}`)
         }
     }
@@ -53,16 +51,6 @@ export default function Login({ history }) {
                 <Link to="/">
                     <img src={logo} className="logo" alt="Tindev" />
                 </Link>
-                {/* <label id="thumbnail">
-                <input
-                    type="file"
-                    required
-                    placeholder="Imagem"
-                    value={imagem}
-                    onChange={e => selectFileHandle(e)}
-                />
-                <img src={camera} alt="Imagem"/>
-                </label> */}
                 {/*campos que irão receber os dados */}
                 <input
                     type="text"
