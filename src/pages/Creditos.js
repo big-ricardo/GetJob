@@ -43,7 +43,7 @@ export default function Login() {
                                         </div>
                                         <div className="texto">
                                             <p><strong>Usuario:</strong> luiss1569</p>
-                                            <p><strong>Cargo:</strong> Fourder e CEO</p>
+                                            <p><strong>Cargo:</strong> Founder e CEO</p>
                                             <p><strong>Localidade:</strong> São Bento do Sapucai-SP</p>
                                             <p><strong>Redes Sociais:</strong><div className="efeito">
                                                 {/*eslint-disable-next-line*/}
@@ -70,7 +70,7 @@ export default function Login() {
                                         </div>
                                         <div className="texto">
                                             <p><strong>Usuario:</strong> açucena14</p>
-                                            <p><strong>Cargo:</strong> Fourder e CFO</p>
+                                            <p><strong>Cargo:</strong> Founder e CFO</p>
                                             <p><strong>Localidade:</strong> Sapucai Mirim-MG</p>
                                             <p><strong>Redes Sociais:</strong><div className="efeito">
                                                 {/*eslint-disable-next-line*/}
@@ -95,7 +95,7 @@ export default function Login() {
                                         </div>
                                         <div className="texto">
                                             <p><strong>Usuario:</strong> luan_lucas</p>
-                                            <p><strong>Cargo:</strong> Fourder e CIO</p>
+                                            <p><strong>Cargo:</strong> Founder e CIO</p>
                                             <p><strong>Localidade:</strong> Brazopolis-MG</p>
                                             <p><strong>Redes Sociais:</strong><div className="efeito">
                                                 {/*eslint-disable-next-line*/}
