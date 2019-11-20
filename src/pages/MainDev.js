@@ -9,8 +9,9 @@ import { Row, Col, Container } from 'reactstrap'
 import matchImage from '../assets/itsamatch.png'
 import io from 'socket.io-client'
 import './Main.css'
+import ipNet from '../services/Config'
 
-export default function Main({ match }) {
+export default function Main({ match,history }) {
     const [users, setUsers] = useState([]);
     const [matchsDevLog, setMatchs] = useState([])
     const [matchDev, setMachDev] = useState(null)
@@ -36,6 +37,14 @@ export default function Main({ match }) {
         loadUsers();// eslint-disable-next-line
     }, [match.params.id])
 
+    async function atualizaMatchs(){
+        setMachDev(null)
+        const matchDev = await api.get('/matchs', {
+            headers: { user: match.params.id }
+        })
+        setMatchs(matchDev.data)
+    }
+
     async function handleLike(id) {
         await api.post(`/vags/${id}/likes`, null, {
             headers: { user: match.params.id }
@@ -56,7 +65,7 @@ export default function Main({ match }) {
     }
 
     useEffect(() => {
-        const socket = io('https://getjobserver.herokuapp.com', {
+        const socket = io(ipNet, {
             query: { user: match.params.id }
         })
 
@@ -159,7 +168,7 @@ export default function Main({ match }) {
                     <p>{matchDev.atuacao}</p>
                     <p>{matchDev.descricao}</p>
                     <p>{matchDev.emailContato}</p>
-                    <button type="button" onClick={() => setMachDev(null)}>Fechar</button>
+                    <button type="button" onClick={() => atualizaMatchs()}>Fechar</button>
                 </div>
             )}
 

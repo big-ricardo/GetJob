@@ -33,18 +33,6 @@ export default function Login({ history }) {
 
         let check = document.querySelector('#horns').checked
 
-        if(check == true){
-            var myCookies = {}
-            myCookies["_userE"] = username
-            myCookies["_passwordE"] = password
-            document.cookie = ""
-            let dataExpired = new Date(Date.now()+60*1000).toString()
-            var cookieString = ''
-            cookieString = '_userE' + "=" + myCookies['_userE'] + ";" + dataExpired + ";"
-            document.cookie = cookieString
-            cookieString = '_passwordE' + "=" + myCookies['_passwordE'] + ";" + dataExpired + ";"
-            document.cookie = cookieString
-        }
 
         const response = await api.post('/emps', {
             username,
@@ -54,8 +42,19 @@ export default function Login({ history }) {
         // api devolve o id do usuario e carrega o home
         const { _id } = response.data;
 
-
         if (_id) {
+            if(check == true){
+                var myCookies = {}
+                myCookies["_userE"] = username
+                myCookies["_passwordE"] = password
+                document.cookie = ""
+                let dataExpired = new Date(Date.now()+60*1000).toString()
+                var cookieString = ''
+                cookieString = '_userE' + "=" + myCookies['_userE'] + ";" + dataExpired + ";"
+                document.cookie = cookieString
+                cookieString = '_passwordE' + "=" + myCookies['_passwordE'] + ";" + dataExpired + ";"
+                document.cookie = cookieString
+            }
             history.push(`/emp/${_id}`)
         } else {
             setError(true)

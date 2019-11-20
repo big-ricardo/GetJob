@@ -10,6 +10,7 @@ import { Row, Col, Container } from 'reactstrap'
 import "./card.css"
 import matchImage from '../assets/itsamatch.png'
 import io from 'socket.io-client'
+import ipNet from '../services/Config'
 
 export default function Main({ match }) {
     const [users, setUsers] = useState([]);
@@ -37,6 +38,14 @@ export default function Main({ match }) {
         loadUsers();// eslint-disable-next-line 
     }, [match.params.id])
 
+    async function atualizaMatchs(){
+        setMachDev(null)
+        const matchDev = await api.get('/matcs', {
+            headers: { user: match.params.id }
+        })
+        setMatchs(matchDev.data)
+    }
+
     async function testUsers() {
         if (users.length <= 1) {
             setPg(pagina + 1)
@@ -58,7 +67,7 @@ export default function Main({ match }) {
     }
 
     useEffect(() => {
-        const socket = io('https://getjobserver.herokuapp.com', {
+        const socket = io(ipNet, {
             query: { user: match.params.id }
         })
 
@@ -143,7 +152,7 @@ export default function Main({ match }) {
                     <img className="avatar" src={matchDev.avatar} alt="Avatar" />
                     <strong className="teste">{matchDev.name}</strong>
                     <p>{matchDev.bio}</p>
-                    <button type="button" onClick={() => setMachDev(null)}>Fechar</button>
+                    <button type="button" onClick={() => atualizaMatchs()}>Fechar</button>
                 </div>
             )}
 

@@ -4,6 +4,7 @@ import './Messagens.css'
 import api from '../services/apis'
 import io from 'socket.io-client'
 import log from '../assets/Icone/favicon (1).ico'
+import ipNet from '../services/Config'
 
 export default function Login({ history, match }) {
     const [message, setMessage] = useState('')
@@ -26,7 +27,7 @@ export default function Login({ history, match }) {
             })
             setTarget(dev.data)
             const mens = await api.get(`/mess/${idtargetUser}`, {
-                headers: { user: idloggedUser, op: 'emp'}
+                headers: { user: idloggedUser, op: 'emp' }
             })// eslint-disable-next-line
             mss = mens.data
             setMessagens(mss)
@@ -39,19 +40,21 @@ export default function Login({ history, match }) {
     async function handleSubmit(e) {
         e.preventDefault()
         // eslint-disable-next-line 
-        const response = await api.post(`/mess/${idtargetUser}`, {
-            id: idloggedUser,
-            message,
-        }, {
-            headers: { user: idloggedUser,  op:'emp' }
-        });
-        setMessage("")
-        var objDiv = document.querySelector(".mensagens-box");
-        objDiv.scrollTop = objDiv.scrollHeight;
+        if (message.messa !== "") {
+            const response = await api.post(`/mess/${idtargetUser}`, {
+                id: idloggedUser,
+                message,
+            }, {
+                headers: { user: idloggedUser, op: 'emp' }
+            });
+            setMessage("")
+            var objDiv = document.querySelector(".mensagens-box");
+            objDiv.scrollTop = objDiv.scrollHeight;
+        }
     }
 
     useEffect(() => {
-        const socket = io('https://getjobserver.herokuapp.com', {
+        const socket = io(ipNet, {
             query: { user: match.params.id }
         })
         socket.on('message', messageRecebida => {

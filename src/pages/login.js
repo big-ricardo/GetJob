@@ -32,24 +32,10 @@ export default function Login({ history, match }) {
         e.preventDefault()
 
         let check = document.querySelector('#horns').checked
-
-        if(check == true){
-            var myCookies = {}
-            myCookies["_user"] = username
-            myCookies["_password"] = password
-            document.cookie = ""
-            let dataExpired = new Date(Date.now()+60*1000).toString()
-            var cookieString = ''
-            cookieString = '_user' + "=" + myCookies['_user'] + ";" + dataExpired + ";"
-            document.cookie = cookieString
-            cookieString = '_password' + "=" + myCookies['_password'] + ";" + dataExpired + ";"
-            document.cookie = cookieString
-        }
-
-       await login()
+       await login(check)
     }
 
-    async function login(){
+    async function login(check){
         const response = await api.post('/devs', {
             user: username,
             senha: password,
@@ -58,6 +44,18 @@ export default function Login({ history, match }) {
         const { _id } = response.data;
 
         if (_id) {
+            if(check == true){
+                var myCookies = {}
+                myCookies["_user"] = username
+                myCookies["_password"] = password
+                document.cookie = ""
+                let dataExpired = new Date(Date.now()+60*1000).toString()
+                var cookieString = ''
+                cookieString = '_user' + "=" + myCookies['_user'] + ";" + dataExpired + ";"
+                document.cookie = cookieString
+                cookieString = '_password' + "=" + myCookies['_password'] + ";" + dataExpired + ";"
+                document.cookie = cookieString
+            }
             history.push(`/homedev/${_id}`)
         } else {
             setError(true)
