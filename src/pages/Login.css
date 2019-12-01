@@ -166,3 +166,33 @@ iframe {
   background-color: rgba(24, 22, 22, 0.26);
   border-radius: 10px;
 }
+
+
+label#thumbnail {
+  margin-bottom: 20px;
+  border: 3px dashed #bbb;
+  background-color: #e5e5e5;
+  background-size: cover;
+  cursor: pointer;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+label#thumbnail input {
+  display: none;
+}
+
+label#thumbnail.has-thumbnail {
+  border: 0;
+}
+
+label#thumbnail.has-thumbnail img {
+  display: none;
+}
+
+.a{
+  width: 100%;
+}
