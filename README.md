@@ -1,5 +1,7 @@
 # getJob()
 
+![Imagem do Software](https://github.com/Luiss1569/Frontend-getJob/blob/master/image.png?raw=true)
+
 getJob() é uma plataforma, ‘web’ e ‘mobile’, para a divulgação de vagas de emprego e estágio, desenvolvido especificamente para oferta e procura de vagas de Informática.
 
 O nosso projeto tem o objetivo facilitar na busca por emprego de profissionais da área de informática, através de uma plataforma onde ele encontrará diversas oportunidades e poderá mostrar seu interesse na vaga de forma mais dinâmica, tornando o processo de admissão desses funcionários por parte das empresas mais fácil
@@ -10,5 +12,5 @@ O projeto busca atender a demanda das empresas por talentos com a dificuldade do
 
 getJob() permite que usuários tenham acesso a diversas vagas na área, aumentando suas chances de encontrar a vaga ideal.
 
-#Teste
+# Teste
 Para testar, use sua conta do GitHub e/ou crie uma empresa!
