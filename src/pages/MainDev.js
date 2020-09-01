@@ -65,7 +65,7 @@ export default function Main({ match,history }) {
     }
 
     useEffect(() => {
-        const socket = io(ipNet, {
+        const socket = io('http://localhost:3333', {
             query: { user: match.params.id }
         })
 
