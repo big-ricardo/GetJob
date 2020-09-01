@@ -10,5 +10,5 @@ O projeto busca atender a demanda das empresas por talentos com a dificuldade do
 
 getJob() permite que usuários tenham acesso a diversas vagas na área, aumentando suas chances de encontrar a vaga ideal.
 
-Qualquer coisa manda um email para mim!
-luisricardo0626@gmail.com
+#Teste
+Para testar, use sua conta do GitHub e/ou crie uma empresa!
